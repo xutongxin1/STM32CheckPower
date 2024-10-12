@@ -110,24 +110,10 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/Core/Src/gpio.c.s"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\Core\Src\gpio.c -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\gpio.c.s
 
-CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
-CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj: E:/gitproject/STM32CheckPower/Core/Src/i2c.c
-CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\i2c.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\i2c.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\i2c.c
-
-CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.i"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\Core\Src\i2c.c > CMakeFiles\STM32CheckPower.elf.dir\Core\Src\i2c.c.i
-
-CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.s"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\Core\Src\i2c.c -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\i2c.c.s
-
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: E:/gitproject/STM32CheckPower/Core/Src/main.c
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\main.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\main.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.i: cmake_force
@@ -141,7 +127,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj: E:/gitproject/STM32CheckPower/Core/Src/retarget.c
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\retarget.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\retarget.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\retarget.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.i: cmake_force
@@ -155,7 +141,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.s: cmake_force
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: E:/gitproject/STM32CheckPower/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -169,7 +155,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_it.c.obj: E:/gitproject/STM32CheckPower/Core/Src/stm32f1xx_it.c
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_it.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\stm32f1xx_it.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
@@ -183,7 +169,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/syscalls.c.obj: E:/gitproject/STM32CheckPower/Core/Src/syscalls.c
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/syscalls.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\syscalls.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\syscalls.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -197,7 +183,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/sysmem.c.obj: E:/gitproject/STM32CheckPower/Core/Src/sysmem.c
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/sysmem.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\sysmem.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\sysmem.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -211,7 +197,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/system_stm32f1xx.c.obj: E:/gitproject/STM32CheckPower/Core/Src/system_stm32f1xx.c
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/system_stm32f1xx.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\system_stm32f1xx.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\system_stm32f1xx.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
@@ -225,7 +211,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/tim.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/tim.c.obj: E:/gitproject/STM32CheckPower/Core/Src/tim.c
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/tim.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/tim.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\tim.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\tim.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/tim.c.i: cmake_force
@@ -239,7 +225,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/tim.c.s: cmake_force
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/usart.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/usart.c.obj: E:/gitproject/STM32CheckPower/Core/Src/usart.c
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/usart.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Core/Src/usart.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Core\Src\usart.c.obj -c E:\gitproject\STM32CheckPower\Core\Src\usart.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/usart.c.i: cmake_force
@@ -252,7 +238,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/usart.c.s: cmake_force
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: E:/gitproject/STM32CheckPower/Core/Startup/startup_stm32f103c8tx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building ASM object CMakeFiles/STM32CheckPower.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object CMakeFiles/STM32CheckPower.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\STM32CheckPower.elf.dir\Core\Startup\startup_stm32f103c8tx.s.obj -c E:\gitproject\STM32CheckPower\Core\Startup\startup_stm32f103c8tx.s
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Startup/startup_stm32f103c8tx.s.i: cmake_force
@@ -266,7 +252,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Startup/startup_stm32f103c8tx.s.s: cmake
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
@@ -280,7 +266,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i: cmake_force
@@ -294,7 +280,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i: cmake_force
@@ -308,7 +294,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
@@ -322,7 +308,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
@@ -336,7 +322,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
@@ -350,7 +336,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
@@ -364,7 +350,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
@@ -378,7 +364,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
@@ -392,7 +378,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
@@ -403,24 +389,10 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
 
-CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
-CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
-CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c
-
-CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c > CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.i
-
-CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.s
-
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -434,7 +406,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -448,7 +420,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -462,7 +434,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -476,7 +448,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -490,7 +462,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
@@ -504,7 +476,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_exti.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_exti.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_exti.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.i: cmake_force
@@ -518,7 +490,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_rcc.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_rcc.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_rcc.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.i: cmake_force
@@ -532,7 +504,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_utils.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_utils.c.obj -c E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_utils.c
 
 CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.i: cmake_force
@@ -546,7 +518,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll
 CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
 CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj: E:/gitproject/STM32CheckPower/ssd1306/ssd1306.c
 CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306.c.obj -c E:\gitproject\STM32CheckPower\ssd1306\ssd1306.c
 
 CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.i: cmake_force
@@ -557,40 +529,11 @@ CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.s"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\ssd1306\ssd1306.c -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306.c.s
 
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj: E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.c
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_fonts.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_fonts.c.obj -c E:\gitproject\STM32CheckPower\ssd1306\ssd1306_fonts.c
-
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.i"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\ssd1306\ssd1306_fonts.c > CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_fonts.c.i
-
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.s"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\ssd1306\ssd1306_fonts.c -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_fonts.c.s
-
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj: E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.c
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_tests.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_tests.c.obj -c E:\gitproject\STM32CheckPower\ssd1306\ssd1306_tests.c
-
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.i"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\ssd1306\ssd1306_tests.c > CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_tests.c.i
-
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.s"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\ssd1306\ssd1306_tests.c -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_tests.c.s
-
 # Object files for target STM32CheckPower.elf
 STM32CheckPower_elf_OBJECTS = \
 "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/adc.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/dma.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/gpio.c.obj" \
-"CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" \
@@ -611,7 +554,6 @@ STM32CheckPower_elf_OBJECTS = \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" \
-"CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" \
@@ -621,9 +563,7 @@ STM32CheckPower_elf_OBJECTS = \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj" \
-"CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj" \
-"CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj" \
-"CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj"
+"CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj"
 
 # External object files for target STM32CheckPower.elf
 STM32CheckPower_elf_EXTERNAL_OBJECTS =
@@ -631,7 +571,6 @@ STM32CheckPower_elf_EXTERNAL_OBJECTS =
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Core/Src/adc.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Core/Src/dma.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Core/Src/gpio.c.obj
-STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
@@ -652,7 +591,6 @@ STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Dr
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
-STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
@@ -663,12 +601,10 @@ STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Dr
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj
-STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj
-STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/build.make
 STM32CheckPower.elf: E:/gitproject/STM32CheckPower/Middlewares/ST/ARM/DSP/Lib/libarm_cortexM3l_math.a
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking C executable STM32CheckPower.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking C executable STM32CheckPower.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\STM32CheckPower.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building E:/gitproject/STM32CheckPower/cmake-build-debug/STM32CheckPower.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building E:/gitproject/STM32CheckPower/cmake-build-debug/STM32CheckPower.bin"

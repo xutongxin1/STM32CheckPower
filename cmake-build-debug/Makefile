@@ -200,30 +200,6 @@ Core/Src/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Core/Src/gpio.c.s
 .PHONY : Core/Src/gpio.c.s
 
-Core/Src/i2c.obj: Core/Src/i2c.c.obj
-.PHONY : Core/Src/i2c.obj
-
-# target to build an object file
-Core/Src/i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj
-.PHONY : Core/Src/i2c.c.obj
-
-Core/Src/i2c.i: Core/Src/i2c.c.i
-.PHONY : Core/Src/i2c.i
-
-# target to preprocess a source file
-Core/Src/i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.i
-.PHONY : Core/Src/i2c.c.i
-
-Core/Src/i2c.s: Core/Src/i2c.c.s
-.PHONY : Core/Src/i2c.s
-
-# target to generate assembly for a file
-Core/Src/i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.s
-.PHONY : Core/Src/i2c.c.s
-
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
@@ -688,30 +664,6 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
-
-# target to build an object file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
-
-# target to preprocess a source file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
-
-# target to generate assembly for a file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
-
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj
 
@@ -952,54 +904,6 @@ ssd1306/ssd1306.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.s
 .PHONY : ssd1306/ssd1306.c.s
 
-ssd1306/ssd1306_fonts.obj: ssd1306/ssd1306_fonts.c.obj
-.PHONY : ssd1306/ssd1306_fonts.obj
-
-# target to build an object file
-ssd1306/ssd1306_fonts.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj
-.PHONY : ssd1306/ssd1306_fonts.c.obj
-
-ssd1306/ssd1306_fonts.i: ssd1306/ssd1306_fonts.c.i
-.PHONY : ssd1306/ssd1306_fonts.i
-
-# target to preprocess a source file
-ssd1306/ssd1306_fonts.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.i
-.PHONY : ssd1306/ssd1306_fonts.c.i
-
-ssd1306/ssd1306_fonts.s: ssd1306/ssd1306_fonts.c.s
-.PHONY : ssd1306/ssd1306_fonts.s
-
-# target to generate assembly for a file
-ssd1306/ssd1306_fonts.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.s
-.PHONY : ssd1306/ssd1306_fonts.c.s
-
-ssd1306/ssd1306_tests.obj: ssd1306/ssd1306_tests.c.obj
-.PHONY : ssd1306/ssd1306_tests.obj
-
-# target to build an object file
-ssd1306/ssd1306_tests.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj
-.PHONY : ssd1306/ssd1306_tests.c.obj
-
-ssd1306/ssd1306_tests.i: ssd1306/ssd1306_tests.c.i
-.PHONY : ssd1306/ssd1306_tests.i
-
-# target to preprocess a source file
-ssd1306/ssd1306_tests.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.i
-.PHONY : ssd1306/ssd1306_tests.c.i
-
-ssd1306/ssd1306_tests.s: ssd1306/ssd1306_tests.c.s
-.PHONY : ssd1306/ssd1306_tests.s
-
-# target to generate assembly for a file
-ssd1306/ssd1306_tests.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.s
-.PHONY : ssd1306/ssd1306_tests.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1018,9 +922,6 @@ help:
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
-	@echo ... Core/Src/i2c.obj
-	@echo ... Core/Src/i2c.i
-	@echo ... Core/Src/i2c.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
@@ -1079,9 +980,6 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.s
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.s
@@ -1112,12 +1010,6 @@ help:
 	@echo ... ssd1306/ssd1306.obj
 	@echo ... ssd1306/ssd1306.i
 	@echo ... ssd1306/ssd1306.s
-	@echo ... ssd1306/ssd1306_fonts.obj
-	@echo ... ssd1306/ssd1306_fonts.i
-	@echo ... ssd1306/ssd1306_fonts.s
-	@echo ... ssd1306/ssd1306_tests.obj
-	@echo ... ssd1306/ssd1306_tests.i
-	@echo ... ssd1306/ssd1306_tests.s
 .PHONY : help
 
 

@@ -31,7 +31,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_adc_ex.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash_ex.h \
- E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_i2c.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pwr.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim_ex.h \

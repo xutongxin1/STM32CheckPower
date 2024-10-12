@@ -37,7 +37,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/gitproject/STM32CheckPower/Core/Src/adc.c" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/adc.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/adc.c.obj.d"
   "E:/gitproject/STM32CheckPower/Core/Src/dma.c" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/dma.c.obj.d"
   "E:/gitproject/STM32CheckPower/Core/Src/gpio.c" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/gpio.c.obj.d"
-  "E:/gitproject/STM32CheckPower/Core/Src/i2c.c" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj.d"
   "E:/gitproject/STM32CheckPower/Core/Src/main.c" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj.d"
   "E:/gitproject/STM32CheckPower/Core/Src/retarget.c" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj.d"
   "E:/gitproject/STM32CheckPower/Core/Src/stm32f1xx_hal_msp.c" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj.d"
@@ -57,7 +56,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj.d"
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj.d"
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj.d"
-  "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj.d"
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj.d"
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj.d"
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj.d"
@@ -68,8 +66,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj.d"
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj.d"
   "E:/gitproject/STM32CheckPower/ssd1306/ssd1306.c" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj.d"
-  "E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.c" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj.d"
-  "E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.c" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

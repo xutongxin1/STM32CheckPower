@@ -33,7 +33,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/adc.c.obj: E:/gitproject/STM32CheckP
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -82,7 +81,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/dma.c.obj: E:/gitproject/STM32CheckP
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -131,56 +129,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/gpio.c.obj: E:/gitproject/STM32Check
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h
-
-CMakeFiles/STM32CheckPower.elf.dir/Core/Src/i2c.c.obj: E:/gitproject/STM32CheckPower/Core/Src/i2c.c \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_newlib_version.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/_default_types.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/stdint.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_intsup.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_stdint.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/features.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
-  E:/gitproject/STM32CheckPower/Core/Inc/i2c.h \
-  E:/gitproject/STM32CheckPower/Core/Inc/main.h \
-  E:/gitproject/STM32CheckPower/Core/Inc/stm32f1xx_hal_conf.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_compiler.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_gcc.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_version.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/core_cm3.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -246,7 +194,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: E:/gitproject/STM32Check
   E:/gitproject/STM32CheckPower/Core/Inc/adc.h \
   E:/gitproject/STM32CheckPower/Core/Inc/dma.h \
   E:/gitproject/STM32CheckPower/Core/Inc/gpio.h \
-  E:/gitproject/STM32CheckPower/Core/Inc/i2c.h \
   E:/gitproject/STM32CheckPower/Core/Inc/main.h \
   E:/gitproject/STM32CheckPower/Core/Inc/retarget.h \
   E:/gitproject/STM32CheckPower/Core/Inc/stm32f1xx_hal_conf.h \
@@ -272,7 +219,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: E:/gitproject/STM32Check
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -289,9 +235,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: E:/gitproject/STM32Check
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h \
   E:/gitproject/STM32CheckPower/Middlewares/ST/ARM/DSP/Inc/arm_math.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306_conf.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.h
+  E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj: E:/gitproject/STM32CheckPower/Core/Src/retarget.c \
   C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_ansi.h \
@@ -357,7 +301,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj: E:/gitproject/STM32C
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -396,7 +339,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: E:/gitproje
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -445,7 +387,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/stm32f1xx_it.c.obj: E:/gitproject/ST
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -560,7 +501,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/system_stm32f1xx.c.obj: E:/gitprojec
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -600,7 +540,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/tim.c.obj: E:/gitproject/STM32CheckP
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -649,7 +588,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/usart.c.obj: E:/gitproject/STM32Chec
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -696,7 +634,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -734,7 +671,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -772,7 +708,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -810,7 +745,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -848,7 +782,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -886,7 +819,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -924,7 +856,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -962,7 +893,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1000,7 +930,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1038,45 +967,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-
-CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_newlib_version.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/_default_types.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/stdint.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_intsup.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_stdint.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/features.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
-  E:/gitproject/STM32CheckPower/Core/Inc/stm32f1xx_hal_conf.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_compiler.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_gcc.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_version.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/core_cm3.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1114,7 +1004,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1152,7 +1041,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1190,7 +1078,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1228,7 +1115,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1266,7 +1152,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1304,7 +1189,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1342,7 +1226,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1381,7 +1264,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1420,7 +1302,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
@@ -1432,72 +1313,11 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h
 
 CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj: E:/gitproject/STM32CheckPower/ssd1306/ssd1306.c \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_ansi.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_newlib_version.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/alloca.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/_default_types.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/_types.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/ieeefp.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/stdlib.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/math.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/newlib.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/stdint.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/stdlib.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/string.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/strings.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_intsup.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_locale.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_stdint.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_types.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/cdefs.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/config.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/features.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/lock.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/reent.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/string.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
-  E:/gitproject/STM32CheckPower/Core/Inc/stm32f1xx_hal_conf.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_compiler.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_gcc.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_version.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/core_cm3.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306_conf.h
-
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj: E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.c \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_ansi.h \
   C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_newlib_version.h \
   C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/_default_types.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/ieeefp.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/newlib.h \
   C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/stdint.h \
   C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_intsup.h \
   C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_stdint.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/config.h \
   C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/features.h \
   C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
@@ -1522,75 +1342,16 @@ CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj: E:/gitproject/ST
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
   E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306_conf.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.h
+  E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h
 
-CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj: E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.c \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_ansi.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_newlib_version.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/_default_types.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/_types.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/ieeefp.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/newlib.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/stdint.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/stdio.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/string.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/strings.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_intsup.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_locale.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_stdint.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_types.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/cdefs.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/config.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/features.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/lock.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/reent.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/stdio.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/string.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
-  C:/Users/86180/13.2rel1/13.2\ Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
-  E:/gitproject/STM32CheckPower/Core/Inc/stm32f1xx_hal_conf.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_compiler.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_gcc.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/cmsis_version.h \
-  E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include/core_cm3.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
-  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306_conf.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.h \
-  E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.h
 
+C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/string.h:
 
 C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_newlib_version.h:
 
@@ -1684,10 +1445,6 @@ E:/gitproject/STM32CheckPower/Middlewares/ST/ARM/DSP/Inc/arm_math.h:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
 
-E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h:
-
-E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
-
 C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/_endian.h:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
@@ -1696,13 +1453,11 @@ E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h:
 
-E:/gitproject/STM32CheckPower/ssd1306/ssd1306_conf.h:
+C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/newlib.h:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
-
-E:/gitproject/STM32CheckPower/Core/Src/i2c.c:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 
@@ -1711,6 +1466,8 @@ C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/_types.h:
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:
+
+E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h:
 
@@ -1728,8 +1485,6 @@ E:/gitproject/STM32CheckPower/Core/Inc/dma.h:
 
 E:/gitproject/STM32CheckPower/Core/Inc/gpio.h:
 
-E:/gitproject/STM32CheckPower/Core/Inc/i2c.h:
-
 C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_ansi.h:
 
 C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/ieeefp.h:
@@ -1740,11 +1495,7 @@ C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/limits.h:
 
 C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/machine/time.h:
 
-C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/newlib.h:
-
 C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/stdio.h:
-
-C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/string.h:
 
 C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/sys/_locale.h:
 
@@ -1802,8 +1553,6 @@ E:/gitproject/STM32CheckPower/Core/Inc/usart.h:
 
 E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h:
 
-E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.h:
-
 C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/_syslist.h:
 
 C:/Users/86180/13.2rel1/13.2\ Rel1/arm-none-eabi/include/errno.h:
@@ -1856,13 +1605,11 @@ E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_fla
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c:
 
-E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
-
-E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c:
-
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
+
+E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c:
 
@@ -1871,9 +1618,3 @@ E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c:
 
 E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c:
-
-E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.c:
-
-E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.h:
-
-E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.c:

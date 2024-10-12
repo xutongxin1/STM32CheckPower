@@ -32,7 +32,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_adc_ex.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash_ex.h \
- E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_i2c.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pwr.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim.h \
  E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim_ex.h \
@@ -49,7 +48,6 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: \
  E:\gitproject\STM32CheckPower\Core\Inc/adc.h \
  E:\gitproject\STM32CheckPower\Core\Inc/main.h \
  E:\gitproject\STM32CheckPower\Core\Inc/dma.h \
- E:\gitproject\STM32CheckPower\Core\Inc/i2c.h \
  E:\gitproject\STM32CheckPower\Core\Inc/tim.h \
  E:\gitproject\STM32CheckPower\Core\Inc/usart.h \
  E:\gitproject\STM32CheckPower\Core\Inc/gpio.h \
@@ -94,6 +92,4 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: \
  C:/Users/86180/13486F~1.2RE/13C7F1~1.2RE/arm-none-eabi/include/sys/sched.h \
  C:/Users/86180/13486F~1.2RE/13C7F1~1.2RE/arm-none-eabi/include/machine/types.h \
  E:\gitproject\STM32CheckPower\ssd1306/ssd1306.h \
- E:\gitproject\STM32CheckPower\ssd1306/ssd1306_conf.h \
- E:\gitproject\STM32CheckPower\ssd1306/ssd1306_tests.h \
  C:/Users/86180/13486F~1.2RE/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h
