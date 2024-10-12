@@ -24,8 +24,8 @@ _BEGIN_STD_C
 #elif defined(STM32F1)
 #include "stm32f1xx_hal.h"
 #elif defined(STM32F4)
-#include "stm32f103xb.h"
-#include "stm32f1xx_hal_gpio.h"
+#include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal_gpio.h"
 #elif defined(STM32L0)
 #include "stm32l0xx_hal.h"
 #elif defined(STM32L1)
@@ -153,6 +153,7 @@ typedef struct {
 } SSD1306_Font_t;
 
 // Procedure definitions
+void OLED_init(void);
 void ssd1306_Init(void);
 void ssd1306_Fill(SSD1306_COLOR color);
 void ssd1306_UpdateScreen(void);
@@ -168,6 +169,10 @@ void ssd1306_FillCircle(uint8_t par_x,uint8_t par_y,uint8_t par_r,SSD1306_COLOR 
 void ssd1306_Polyline(const SSD1306_VERTEX *par_vertex, uint16_t par_size, SSD1306_COLOR color);
 void ssd1306_DrawRectangle(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, SSD1306_COLOR color);
 void ssd1306_FillRectangle(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, SSD1306_COLOR color);
+void Page_set(unsigned char page);
+void OLED_clear(void);
+void Column_set(unsigned char column);
+void OLED_full(void);
 
 /**
  * @brief Invert color of pixels in rectangle (include border)

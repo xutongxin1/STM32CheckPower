@@ -82,10 +82,6 @@ void Error_Handler(void);
 #define RELAY_CTRL_GPIO_Port GPIOA
 #define BEEP_Pin GPIO_PIN_5
 #define BEEP_GPIO_Port GPIOB
-#define OLED_SCL_Pin GPIO_PIN_6
-#define OLED_SCL_GPIO_Port GPIOB
-#define OLED_SDA_Pin GPIO_PIN_7
-#define OLED_SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

@@ -294,10 +294,9 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h
  E:/gitproject/STM32CheckPower/Middlewares/ST/ARM/DSP/Inc/arm_math.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_conf.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_fonts.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_tests.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_conf.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.h
 
 CMakeFiles/STM32CheckPower.elf.dir/Core/Src/retarget.c.obj
  E:/gitproject/STM32CheckPower/Core/Src/retarget.c
@@ -1465,8 +1464,8 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306.c
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306.c
  C:/Users/86180/13.2rel1/13.2 Rel1/arm-none-eabi/include/_ansi.h
  C:/Users/86180/13.2rel1/13.2 Rel1/arm-none-eabi/include/_newlib_version.h
  C:/Users/86180/13.2rel1/13.2 Rel1/arm-none-eabi/include/alloca.h
@@ -1520,11 +1519,11 @@ CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_conf.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_conf.h
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_fonts.c
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.c
  C:/Users/86180/13.2rel1/13.2 Rel1/arm-none-eabi/include/_ansi.h
  C:/Users/86180/13.2rel1/13.2 Rel1/arm-none-eabi/include/_newlib_version.h
  C:/Users/86180/13.2rel1/13.2 Rel1/arm-none-eabi/include/machine/_default_types.h
@@ -1565,12 +1564,12 @@ CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_conf.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_fonts.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_conf.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.h
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_tests.c
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.c
  C:/Users/86180/13.2rel1/13.2 Rel1/arm-none-eabi/include/_ansi.h
  C:/Users/86180/13.2rel1/13.2 Rel1/arm-none-eabi/include/_newlib_version.h
  C:/Users/86180/13.2rel1/13.2 Rel1/arm-none-eabi/include/machine/_default_types.h
@@ -1623,8 +1622,8 @@ CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
  E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_conf.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_fonts.h
- E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_tests.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_conf.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.h
+ E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.h
 

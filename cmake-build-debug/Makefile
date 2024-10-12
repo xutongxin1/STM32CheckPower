@@ -928,77 +928,77 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.s
 
-Middlewares/ssd1306/ssd1306.obj: Middlewares/ssd1306/ssd1306.c.obj
-.PHONY : Middlewares/ssd1306/ssd1306.obj
+ssd1306/ssd1306.obj: ssd1306/ssd1306.c.obj
+.PHONY : ssd1306/ssd1306.obj
 
 # target to build an object file
-Middlewares/ssd1306/ssd1306.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj
-.PHONY : Middlewares/ssd1306/ssd1306.c.obj
+ssd1306/ssd1306.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj
+.PHONY : ssd1306/ssd1306.c.obj
 
-Middlewares/ssd1306/ssd1306.i: Middlewares/ssd1306/ssd1306.c.i
-.PHONY : Middlewares/ssd1306/ssd1306.i
+ssd1306/ssd1306.i: ssd1306/ssd1306.c.i
+.PHONY : ssd1306/ssd1306.i
 
 # target to preprocess a source file
-Middlewares/ssd1306/ssd1306.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.i
-.PHONY : Middlewares/ssd1306/ssd1306.c.i
+ssd1306/ssd1306.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.i
+.PHONY : ssd1306/ssd1306.c.i
 
-Middlewares/ssd1306/ssd1306.s: Middlewares/ssd1306/ssd1306.c.s
-.PHONY : Middlewares/ssd1306/ssd1306.s
+ssd1306/ssd1306.s: ssd1306/ssd1306.c.s
+.PHONY : ssd1306/ssd1306.s
 
 # target to generate assembly for a file
-Middlewares/ssd1306/ssd1306.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.s
-.PHONY : Middlewares/ssd1306/ssd1306.c.s
+ssd1306/ssd1306.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.s
+.PHONY : ssd1306/ssd1306.c.s
 
-Middlewares/ssd1306/ssd1306_fonts.obj: Middlewares/ssd1306/ssd1306_fonts.c.obj
-.PHONY : Middlewares/ssd1306/ssd1306_fonts.obj
+ssd1306/ssd1306_fonts.obj: ssd1306/ssd1306_fonts.c.obj
+.PHONY : ssd1306/ssd1306_fonts.obj
 
 # target to build an object file
-Middlewares/ssd1306/ssd1306_fonts.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj
-.PHONY : Middlewares/ssd1306/ssd1306_fonts.c.obj
+ssd1306/ssd1306_fonts.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj
+.PHONY : ssd1306/ssd1306_fonts.c.obj
 
-Middlewares/ssd1306/ssd1306_fonts.i: Middlewares/ssd1306/ssd1306_fonts.c.i
-.PHONY : Middlewares/ssd1306/ssd1306_fonts.i
+ssd1306/ssd1306_fonts.i: ssd1306/ssd1306_fonts.c.i
+.PHONY : ssd1306/ssd1306_fonts.i
 
 # target to preprocess a source file
-Middlewares/ssd1306/ssd1306_fonts.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.i
-.PHONY : Middlewares/ssd1306/ssd1306_fonts.c.i
+ssd1306/ssd1306_fonts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.i
+.PHONY : ssd1306/ssd1306_fonts.c.i
 
-Middlewares/ssd1306/ssd1306_fonts.s: Middlewares/ssd1306/ssd1306_fonts.c.s
-.PHONY : Middlewares/ssd1306/ssd1306_fonts.s
+ssd1306/ssd1306_fonts.s: ssd1306/ssd1306_fonts.c.s
+.PHONY : ssd1306/ssd1306_fonts.s
 
 # target to generate assembly for a file
-Middlewares/ssd1306/ssd1306_fonts.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.s
-.PHONY : Middlewares/ssd1306/ssd1306_fonts.c.s
+ssd1306/ssd1306_fonts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.s
+.PHONY : ssd1306/ssd1306_fonts.c.s
 
-Middlewares/ssd1306/ssd1306_tests.obj: Middlewares/ssd1306/ssd1306_tests.c.obj
-.PHONY : Middlewares/ssd1306/ssd1306_tests.obj
+ssd1306/ssd1306_tests.obj: ssd1306/ssd1306_tests.c.obj
+.PHONY : ssd1306/ssd1306_tests.obj
 
 # target to build an object file
-Middlewares/ssd1306/ssd1306_tests.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj
-.PHONY : Middlewares/ssd1306/ssd1306_tests.c.obj
+ssd1306/ssd1306_tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj
+.PHONY : ssd1306/ssd1306_tests.c.obj
 
-Middlewares/ssd1306/ssd1306_tests.i: Middlewares/ssd1306/ssd1306_tests.c.i
-.PHONY : Middlewares/ssd1306/ssd1306_tests.i
+ssd1306/ssd1306_tests.i: ssd1306/ssd1306_tests.c.i
+.PHONY : ssd1306/ssd1306_tests.i
 
 # target to preprocess a source file
-Middlewares/ssd1306/ssd1306_tests.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.i
-.PHONY : Middlewares/ssd1306/ssd1306_tests.c.i
+ssd1306/ssd1306_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.i
+.PHONY : ssd1306/ssd1306_tests.c.i
 
-Middlewares/ssd1306/ssd1306_tests.s: Middlewares/ssd1306/ssd1306_tests.c.s
-.PHONY : Middlewares/ssd1306/ssd1306_tests.s
+ssd1306/ssd1306_tests.s: ssd1306/ssd1306_tests.c.s
+.PHONY : ssd1306/ssd1306_tests.s
 
 # target to generate assembly for a file
-Middlewares/ssd1306/ssd1306_tests.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.s
-.PHONY : Middlewares/ssd1306/ssd1306_tests.c.s
+ssd1306/ssd1306_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32CheckPower.elf.dir\build.make CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.s
+.PHONY : ssd1306/ssd1306_tests.c.s
 
 # Help Target
 help:
@@ -1109,15 +1109,15 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.s
-	@echo ... Middlewares/ssd1306/ssd1306.obj
-	@echo ... Middlewares/ssd1306/ssd1306.i
-	@echo ... Middlewares/ssd1306/ssd1306.s
-	@echo ... Middlewares/ssd1306/ssd1306_fonts.obj
-	@echo ... Middlewares/ssd1306/ssd1306_fonts.i
-	@echo ... Middlewares/ssd1306/ssd1306_fonts.s
-	@echo ... Middlewares/ssd1306/ssd1306_tests.obj
-	@echo ... Middlewares/ssd1306/ssd1306_tests.i
-	@echo ... Middlewares/ssd1306/ssd1306_tests.s
+	@echo ... ssd1306/ssd1306.obj
+	@echo ... ssd1306/ssd1306.i
+	@echo ... ssd1306/ssd1306.s
+	@echo ... ssd1306/ssd1306_fonts.obj
+	@echo ... ssd1306/ssd1306_fonts.i
+	@echo ... ssd1306/ssd1306_fonts.s
+	@echo ... ssd1306/ssd1306_tests.obj
+	@echo ... ssd1306/ssd1306_tests.i
+	@echo ... ssd1306/ssd1306_tests.s
 .PHONY : help
 
 

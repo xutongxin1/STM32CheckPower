@@ -29,7 +29,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "E:/gitproject/STM32CheckPower/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
   "E:/gitproject/STM32CheckPower/Drivers/CMSIS/Include"
   "E:/gitproject/STM32CheckPower/Middlewares/ST/ARM/DSP/Inc"
-  "E:/gitproject/STM32CheckPower/Middlewares/ssd1306"
+  "E:/gitproject/STM32CheckPower/ssd1306"
   )
 
 # The set of dependency files which are needed:
@@ -67,9 +67,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj.d"
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj.d"
   "E:/gitproject/STM32CheckPower/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj.d"
-  "E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306.c" "CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj.d"
-  "E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_fonts.c" "CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj.d"
-  "E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_tests.c" "CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj.d"
+  "E:/gitproject/STM32CheckPower/ssd1306/ssd1306.c" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj.d"
+  "E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.c" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj.d"
+  "E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.c" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj" "gcc" "CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

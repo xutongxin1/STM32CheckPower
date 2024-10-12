@@ -543,47 +543,47 @@ CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.s"
 	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_utils.c -o CMakeFiles\STM32CheckPower.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_utils.c.s
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj: E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306.c
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306.c.obj -c E:\gitproject\STM32CheckPower\Middlewares\ssd1306\ssd1306.c
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj: E:/gitproject/STM32CheckPower/ssd1306/ssd1306.c
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj"
+	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306.c.obj -c E:\gitproject\STM32CheckPower\ssd1306\ssd1306.c
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.i"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\Middlewares\ssd1306\ssd1306.c > CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306.c.i
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.i"
+	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\ssd1306\ssd1306.c > CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306.c.i
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.s"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\Middlewares\ssd1306\ssd1306.c -o CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306.c.s
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.s"
+	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\ssd1306\ssd1306.c -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306.c.s
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj: E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_fonts.c
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306_fonts.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306_fonts.c.obj -c E:\gitproject\STM32CheckPower\Middlewares\ssd1306\ssd1306_fonts.c
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj: E:/gitproject/STM32CheckPower/ssd1306/ssd1306_fonts.c
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj"
+	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_fonts.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_fonts.c.obj -c E:\gitproject\STM32CheckPower\ssd1306\ssd1306_fonts.c
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.i"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\Middlewares\ssd1306\ssd1306_fonts.c > CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306_fonts.c.i
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.i"
+	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\ssd1306\ssd1306_fonts.c > CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_fonts.c.i
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.s"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\Middlewares\ssd1306\ssd1306_fonts.c -o CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306_fonts.c.s
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.s"
+	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\ssd1306\ssd1306_fonts.c -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_fonts.c.s
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj: E:/gitproject/STM32CheckPower/Middlewares/ssd1306/ssd1306_tests.c
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306_tests.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306_tests.c.obj -c E:\gitproject\STM32CheckPower\Middlewares\ssd1306\ssd1306_tests.c
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj: CMakeFiles/STM32CheckPower.elf.dir/flags.make
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj: E:/gitproject/STM32CheckPower/ssd1306/ssd1306_tests.c
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj: CMakeFiles/STM32CheckPower.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\gitproject\STM32CheckPower\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj"
+	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj -MF CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_tests.c.obj.d -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_tests.c.obj -c E:\gitproject\STM32CheckPower\ssd1306\ssd1306_tests.c
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.i"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\Middlewares\ssd1306\ssd1306_tests.c > CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306_tests.c.i
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.i"
+	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\gitproject\STM32CheckPower\ssd1306\ssd1306_tests.c > CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_tests.c.i
 
-CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.s"
-	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\Middlewares\ssd1306\ssd1306_tests.c -o CMakeFiles\STM32CheckPower.elf.dir\Middlewares\ssd1306\ssd1306_tests.c.s
+CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.s"
+	C:\Users\86180\13486F~1.2RE\13C7F1~1.2RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\gitproject\STM32CheckPower\ssd1306\ssd1306_tests.c -o CMakeFiles\STM32CheckPower.elf.dir\ssd1306\ssd1306_tests.c.s
 
 # Object files for target STM32CheckPower.elf
 STM32CheckPower_elf_OBJECTS = \
@@ -621,9 +621,9 @@ STM32CheckPower_elf_OBJECTS = \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj" \
 "CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj" \
-"CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj" \
-"CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj" \
-"CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj"
+"CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj" \
+"CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj" \
+"CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj"
 
 # External object files for target STM32CheckPower.elf
 STM32CheckPower_elf_EXTERNAL_OBJECTS =
@@ -662,9 +662,9 @@ STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Dr
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c.obj
-STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306.c.obj
-STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_fonts.c.obj
-STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/Middlewares/ssd1306/ssd1306_tests.c.obj
+STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306.c.obj
+STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_fonts.c.obj
+STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/ssd1306/ssd1306_tests.c.obj
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/build.make
 STM32CheckPower.elf: E:/gitproject/STM32CheckPower/Middlewares/ST/ARM/DSP/Lib/libarm_cortexM3l_math.a
 STM32CheckPower.elf: CMakeFiles/STM32CheckPower.elf.dir/link.txt

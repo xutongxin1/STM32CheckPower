@@ -93,9 +93,7 @@ CMakeFiles/STM32CheckPower.elf.dir/Core/Src/main.c.obj: \
  C:/Users/86180/13486F~1.2RE/13C7F1~1.2RE/arm-none-eabi/include/sys/_pthreadtypes.h \
  C:/Users/86180/13486F~1.2RE/13C7F1~1.2RE/arm-none-eabi/include/sys/sched.h \
  C:/Users/86180/13486F~1.2RE/13C7F1~1.2RE/arm-none-eabi/include/machine/types.h \
- E:\gitproject\STM32CheckPower\Middlewares\ssd1306/ssd1306.h \
- E:\gitproject\STM32CheckPower\Middlewares\ssd1306/ssd1306_conf.h \
- C:/Users/86180/13486F~1.2RE/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
- E:\gitproject\STM32CheckPower\Middlewares\ssd1306/ssd1306_fonts.h \
- E:\gitproject\STM32CheckPower\Middlewares\ssd1306/ssd1306.h \
- E:\gitproject\STM32CheckPower\Middlewares\ssd1306/ssd1306_tests.h
+ E:\gitproject\STM32CheckPower\ssd1306/ssd1306.h \
+ E:\gitproject\STM32CheckPower\ssd1306/ssd1306_conf.h \
+ E:\gitproject\STM32CheckPower\ssd1306/ssd1306_tests.h \
+ C:/Users/86180/13486F~1.2RE/13C7F1~1.2RE/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h
