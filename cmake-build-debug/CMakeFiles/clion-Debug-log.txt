@@ -1,5 +1,0 @@
-"C:\Users\86180\AppData\Local\Programs\CLion 2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S E:\gitproject\STM32CheckPower -B E:\gitproject\STM32CheckPower\cmake-build-debug
--- Minimal optimization, debug info included
--- Configuring done (0.1s)
--- Generating done (0.1s)
--- Build files have been written to: E:/gitproject/STM32CheckPower/cmake-build-debug

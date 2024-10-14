@@ -20,6 +20,9 @@
 #define READ_SDA     (GPIOB->IDR & 0X0040)
 const unsigned char *point;
 unsigned char ACK = 0;
+static SSD1306_t SSD1306;
+// Screenbuffer
+static uint8_t SSD1306_Buffer[SSD1306_BUFFER_SIZE];
 const unsigned char OLED_init_cmd[OLED_CMD_NUMBER] =
     {
 
@@ -279,7 +282,7 @@ void OLED_init(void)
     }
 }
 
-void Picture_display(const unsigned char *ptr_pic)
+__attribute__((unused)) void Picture_display(const unsigned char *ptr_pic)
 {
     unsigned char page, column;
     for (page = 0; page < OLED_PAGE_NUMBER; page++)        //page loop
@@ -293,7 +296,7 @@ void Picture_display(const unsigned char *ptr_pic)
     }
 }
 
-void Picture_ReverseDisplay(const unsigned char *ptr_pic)
+__attribute__((unused)) void Picture_ReverseDisplay(const unsigned char *ptr_pic)
 {
     unsigned char page, column, data;
     for (page = 0; page < OLED_PAGE_NUMBER; page++)        //page loop
@@ -307,4 +310,162 @@ void Picture_ReverseDisplay(const unsigned char *ptr_pic)
             OLED_send_data(data);
         }
     }
+}
+char ssd1306_WriteString(char* str, SSD1306_Font_t Font, SSD1306_COLOR color) {
+    while (*str) {
+        if (ssd1306_WriteChar(*str, Font, color) != *str) {
+            // Char could not be written
+            return *str;
+        }
+        str++;
+    }
+
+    // Everything ok
+    return *str;
+}
+/*
+ * Draw 1 char to the screen buffer
+ * ch       => char om weg te schrijven
+ * Font     => Font waarmee we gaan schrijven
+ * color    => Black or White
+ */
+char ssd1306_WriteChar(char ch, SSD1306_Font_t Font, SSD1306_COLOR color) {
+    uint32_t i, b, j;
+
+    // Check if character is valid
+    if (ch < 32 || ch > 126)
+        return 0;
+
+    // Check remaining space on current line
+    if (SSD1306_WIDTH < (SSD1306.CurrentX + Font.width) ||
+        SSD1306_HEIGHT < (SSD1306.CurrentY + Font.height))
+    {
+        // Not enough space on current line
+        return 0;
+    }
+
+    // Use the font to write
+    for(i = 0; i < Font.height; i++) {
+        b = Font.data[(ch - 32) * Font.height + i];
+        for(j = 0; j < Font.width; j++) {
+            if((b << j) & 0x8000)  {
+                ssd1306_DrawPixel(SSD1306.CurrentX + j, (SSD1306.CurrentY + i), (SSD1306_COLOR) color);
+            } else {
+                ssd1306_DrawPixel(SSD1306.CurrentX + j, (SSD1306.CurrentY + i), (SSD1306_COLOR)!color);
+            }
+        }
+    }
+
+    // The current space is now taken
+    SSD1306.CurrentX += Font.char_width ? Font.char_width[ch - 32] : Font.width;
+
+    // Return written char for validation
+    return ch;
+}
+void ssd1306_DrawPixel(uint8_t x, uint8_t y, SSD1306_COLOR color) {
+    if(x >= SSD1306_WIDTH || y >= SSD1306_HEIGHT) {
+        // Don't write outside the buffer
+        return;
+    }
+
+    // Draw in the right color
+    if(color == White) {
+        SSD1306_Buffer[x + (y / 8) * SSD1306_WIDTH] |= 1 << (y % 8);
+    } else {
+        SSD1306_Buffer[x + (y / 8) * SSD1306_WIDTH] &= ~(1 << (y % 8));
+    }
+}
+
+void ssd1306_SetCursor(uint8_t x, uint8_t y) {
+    SSD1306.CurrentX = x;
+    SSD1306.CurrentY = y;
+}
+
+void ssd1306_UpdateScreen(void)
+{
+    // Write data to each page of RAM. Number of pages
+    // depends on the screen height:
+    //
+    //  * 32px   ==  4 pages
+    //  * 64px   ==  8 pages
+    //  * 128px  ==  16 pages
+    for(uint8_t i = 0; i < SSD1306_HEIGHT/8; i++) {
+        OLED_send_cmd(0xB0 + i); // Set the current RAM page address.
+        OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
+        OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
+        for (int j = 0; j < SSD1306_WIDTH; ++j) {
+            OLED_send_data(SSD1306_Buffer[SSD1306_WIDTH*i+j]);
+
+        }
+    }
+}
+
+/* Draw circle by Bresenhem's algorithm */
+void ssd1306_DrawCircle(uint8_t par_x,uint8_t par_y,uint8_t par_r,SSD1306_COLOR par_color) {
+    int32_t x = -par_r;
+    int32_t y = 0;
+    int32_t err = 2 - 2 * par_r;
+    int32_t e2;
+
+    if (par_x >= SSD1306_WIDTH || par_y >= SSD1306_HEIGHT) {
+        return;
+    }
+
+    do {
+        ssd1306_DrawPixel(par_x - x, par_y + y, par_color);
+        ssd1306_DrawPixel(par_x + x, par_y + y, par_color);
+        ssd1306_DrawPixel(par_x + x, par_y - y, par_color);
+        ssd1306_DrawPixel(par_x - x, par_y - y, par_color);
+        e2 = err;
+
+        if (e2 <= y) {
+            y++;
+            err = err + (y * 2 + 1);
+            if(-x == y && e2 <= x) {
+                e2 = 0;
+            }
+        }
+
+        if (e2 > x) {
+            x++;
+            err = err + (x * 2 + 1);
+        }
+    } while (x <= 0);
+
+    return;
+}
+/* Draw filled circle. Pixel positions calculated using Bresenham's algorithm */
+void ssd1306_FillCircle(uint8_t par_x,uint8_t par_y,uint8_t par_r,SSD1306_COLOR par_color) {
+    int32_t x = -par_r;
+    int32_t y = 0;
+    int32_t err = 2 - 2 * par_r;
+    int32_t e2;
+
+    if (par_x >= SSD1306_WIDTH || par_y >= SSD1306_HEIGHT) {
+        return;
+    }
+
+    do {
+        for (uint8_t _y = (par_y + y); _y >= (par_y - y); _y--) {
+            for (uint8_t _x = (par_x - x); _x >= (par_x + x); _x--) {
+                ssd1306_DrawPixel(_x, _y, par_color);
+            }
+        }
+
+        e2 = err;
+        if (e2 <= y) {
+            y++;
+            err = err + (y * 2 + 1);
+            if (-x == y && e2 <= x) {
+                e2 = 0;
+            }
+        }
+
+        if (e2 > x) {
+            x++;
+            err = err + (x * 2 + 1);
+        }
+    } while (x <= 0);
+
+    return;
 }
