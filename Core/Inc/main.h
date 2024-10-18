@@ -78,10 +78,10 @@ void Error_Handler(void);
 #define BTN_DOWN_GPIO_Port GPIOB
 #define BTN_OK_Pin GPIO_PIN_11
 #define BTN_OK_GPIO_Port GPIOB
-#define RELAY_CTRL_Pin GPIO_PIN_8
-#define RELAY_CTRL_GPIO_Port GPIOA
 #define BEEP_Pin GPIO_PIN_5
 #define BEEP_GPIO_Port GPIOB
+#define RELAY_CTRL_Pin GPIO_PIN_8
+#define RELAY_CTRL_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
