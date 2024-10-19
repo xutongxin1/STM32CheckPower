@@ -269,7 +269,7 @@ void OLED_full(void)
         Column_set(0);
         for (column = 0; column < OLED_COLUMN_NUMBER; column++)    //column loop
         {
-            OLED_send_data(0xff);
+            OLED_send_data(0x00);
         }
     }
 }
@@ -468,4 +468,142 @@ void ssd1306_FillCircle(uint8_t par_x,uint8_t par_y,uint8_t par_r,SSD1306_COLOR 
     } while (x <= 0);
 
     return;
+}
+//初始化显示所有中文
+void oled_ShownChinese(char x,char y,char *p){
+    //电压
+    OLED_send_cmd(0x20); // Set the current RAM page address.
+    OLED_send_cmd(0x00);
+    OLED_send_cmd(0x21);
+    OLED_send_cmd(x);
+    OLED_send_cmd(x+0x0f);
+    OLED_send_cmd(0x22);
+    OLED_send_cmd(y);
+    OLED_send_cmd(y+0x01);
+    for (int i = 0; i < 31; ++i) {
+        OLED_send_data(p[i]);
+    }
+
+//
+//    for (int i = 2; i < 4; ++i) {
+//        for (int j = 0; j < 16; ++j) {
+//            OLED_send_data(Chinese_word[i][j]);
+//        }
+//    }
+//    OLED_send_cmd(0xB0 + 1); // Set the current RAM page address.
+//    OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
+//    OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
+//    for (int i = 2; i < 4; ++i) {
+//        for (int j = 16; j < 32; ++j) {
+//            OLED_send_data(Chinese_word[i][j]);
+//        }
+//    }
+//        //阈值：
+//        OLED_send_cmd(0xB0 + 2); // Set the current RAM page address.
+//        OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
+//        OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
+//        for (int i = 0; i < 2; ++i) {
+//            for (int j = 0; j < 16; ++j) {
+//                OLED_send_data(Chinese_word[i][j]);
+//            }
+//        }
+//        OLED_send_cmd(0xB0+3); // Set the current RAM page address.
+//        OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
+//        OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
+//        for (int i = 0; i < 2; ++i) {
+//            for (int j = 16; j < 32; ++j) {
+//                OLED_send_data(Chinese_word[i][j]);
+//        }
+//    }
+//
+//
+//
+//    //测量范围：
+//        OLED_send_cmd(0xB0+4); // Set the current RAM page address.
+//        OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
+//        OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
+//        for (int i = 4; i < 6; ++i) {
+//            for (int j = 0; j < 16; ++j) {
+//                    OLED_send_data(Chinese_word[i][j]);
+//            };
+//        }
+//    //测量范围：
+//        OLED_send_cmd(0xB0+5); // Set the current RAM page address.
+//        OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
+//        OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
+//        for (int i = 4; i < 6; ++i) {
+//            for (int j = 16; j < 32; ++j) {
+//                OLED_send_data(Chinese_word[i][j]);
+//        };
+//    }
+}
+void oled_write_string(char x, char y, char *p, uint8_t len)
+{
+
+    uint8_t str_x = x;
+    for(uint8_t i = 0; i < len; i++)
+    {
+
+        uint8_t place = p[i];
+        oled_write_str(str_x, y, place);
+        str_x = str_x + 0x08;
+
+    }
+
+}
+void oled_write_str(char x, char y, uint8_t chr)         //
+{
+
+    chr = chr - ' ';
+    OLED_send_cmd(0x20);
+    OLED_send_cmd(0x00);
+    OLED_send_cmd(0x21);
+    OLED_send_cmd(x);
+    OLED_send_cmd(x+0x07);
+    OLED_send_cmd(0x22);
+    OLED_send_cmd(y);
+    OLED_send_cmd(y+0x01);
+
+    for(int i = 0; i < 16; i++)
+    {
+
+        OLED_send_data(asc2_1608[chr][i]);
+
+    }
+
+}
+void oled_write_str_Over(char x, char y, uint8_t chr)         //
+{
+
+    chr = chr - ' ';
+    OLED_send_cmd(0x20);
+    OLED_send_cmd(0x00);
+    OLED_send_cmd(0x21);
+    OLED_send_cmd(x);
+    OLED_send_cmd(x+0x07);
+    OLED_send_cmd(0x22);
+    OLED_send_cmd(y);
+    OLED_send_cmd(y+0x01);
+
+    for(int i = 0; i < 16; i++)
+    {
+
+        OLED_send_data(0xff-asc2_1608[chr][i]);
+
+    }
+
+}
+void oled_write_string_Over(char x, char y, char *p, uint8_t len)
+{
+
+    uint8_t str_x = x;
+    for(uint8_t i = 0; i < len; i++)
+    {
+
+        uint8_t place = p[i];
+        oled_write_str_Over(str_x, y, place);
+        str_x = str_x + 0x08;
+
+    }
+
 }
