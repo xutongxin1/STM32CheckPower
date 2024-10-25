@@ -93,7 +93,7 @@ uint32_t Read_ADC_Channel(uint32_t channel)
         adc_value = HAL_ADC_GetValue(&hadc2);
     }
 
-    // ¹Ø±ÕADC
+    // ï¿½Ø±ï¿½ADC
     HAL_ADC_Stop(&hadc2);
 
     return adc_value;
@@ -170,11 +170,11 @@ int main(void)
     while (1) {
 //        ssd1306_SetCursor(30, 40);
         sprintf(str, ":%dV-%dV  ", thresholdType * 25 + 5, range);
-        oled_write_string(0x20, 0x04, str, strlen(str) );//´òÓ¡Á¿³Ì
+        oled_write_string(0x20, 0x04, str, strlen(str) );//ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½
 //        sprintf(str, "Threshold :%dV ", threshold);
 //        ssd1306_WriteString(str, Font_7X10, Black);
 
-        //ÅÐ¶ÏÊÇ·ñÐèÒªÇÐµ²Î»
+        //ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Òªï¿½Ðµï¿½Î»
         thresholdType = HAL_GPIO_ReadPin(switch_GPIO_Port, switch_Pin);
         if (thresholdType != thresholdTypeOld) {
             thresholdTypeOld = thresholdType;
@@ -188,11 +188,11 @@ int main(void)
                 threshold = 20;
             }
 //            ssd1306_SetCursor(30, 8);
-            sprintf(str, ":%dV ", threshold);//¸üÐÂµ²Î»Êý¾Ý´òÓ¡
+            sprintf(str, ":%dV ", threshold);//ï¿½ï¿½ï¿½Âµï¿½Î»ï¿½ï¿½ï¿½Ý´ï¿½Ó¡
             oled_write_string(0x40,0x00,str, strlen(str));
         }
 
-        //ãÐÖµ¿ØÖÆÏà¹Ø
+        //ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (HAL_GPIO_ReadPin(BTN_UP_GPIO_Port, BTN_UP_Pin) == 0) {
             HAL_Delay(10);
             if (HAL_GPIO_ReadPin(BTN_UP_GPIO_Port, BTN_UP_Pin) == 0) {
@@ -230,7 +230,7 @@ int main(void)
             }
         }
 
-        //ADC²ÉÑù´¦Àí
+        //ADCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (adc_buffer_cnt == 1024) {
 //            uint32_t adcValue1 = Read_ADC_Channel(ADC_CHANNEL_2);
 //            BaseVolatge = (adcValue1) / 4096.0 * 3.3;
@@ -240,7 +240,7 @@ int main(void)
             }
             int zeroCrossings[10];
             int zeroCrossingCount = 0;
-            // ²éÕÒÕýÏòÁã½»²æµã
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã½»ï¿½ï¿½ï¿½
             for (int i = 0; i < 1023; i++) {
                 if (rms_buffer[i] <= 0 && rms_buffer[i + 1] > 0) {
                     zeroCrossings[zeroCrossingCount++] = i;
@@ -251,19 +251,19 @@ int main(void)
             }
             int startIdx, endIdx, length = 0;
             if (zeroCrossingCount >= 3) {
-                startIdx = zeroCrossings[0]; // µÚÒ»¸öÁã½»²æµãµÄË÷Òý
-                endIdx = zeroCrossings[2]; // µÚÈý¸öÁã½»²æµãµÄË÷Òý
-                length = endIdx - startIdx; // ¼ÆËã2¸öÖÜÆÚµÄ³¤¶È
+                startIdx = zeroCrossings[0]; // ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ã½»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                endIdx = zeroCrossings[2]; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã½»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                length = endIdx - startIdx; // ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ÚµÄ³ï¿½ï¿½ï¿½
 
                 arm_rms_f32(&rms_buffer[startIdx], length, &Rms);
             }
             adc_buffer_cnt = 0;
         }
 
-        //·ÖÀëµ²Î»´¦ÀíÊý¾Ý
+        //ï¿½ï¿½ï¿½ëµ²Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (thresholdType == ThresholdTypeHigh) {
             float RMSN = (Rms) / 0.47 * 220.0 / 0.75 / 2.5 / 0.98;
-            if (RMSN > thresholdOld) {//±¨¾¯ÅÐ¶Ï
+            if (RMSN > thresholdOld) {//ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
                 HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
 //                ssd1306_SetCursor(2, 50);
                 sprintf(str, "ALARMING!!!!");
@@ -279,7 +279,7 @@ int main(void)
             oled_write_string(0x20,0x02,str, strlen(str));
         } else if (thresholdType == ThresholdTypeLow) {
             float RMSN = (Rms) / 0.47 * 22.0 / 0.75 / 2.5 / 0.96;
-            if (RMSN > thresholdOld) //±¨¾¯ÅÐ¶Ï
+            if (RMSN > thresholdOld) //ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
             {
                 HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
 //                ssd1306_SetCursor(2, 50);
