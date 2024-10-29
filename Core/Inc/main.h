@@ -47,8 +47,8 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 enum thresholdType {
-  ThresholdTypeLow  = 0,
-  ThresholdTypeHigh
+   ThresholdTypeHigh = 0,
+   ThresholdTypeLow
 };
 /* USER CODE END ET */
 
@@ -70,16 +70,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define BTN_DOWN_Pin GPIO_PIN_13
+#define BTN_DOWN_GPIO_Port GPIOC
+#define BTN_UP_Pin GPIO_PIN_14
+#define BTN_UP_GPIO_Port GPIOC
+#define BTN_OK_Pin GPIO_PIN_15
+#define BTN_OK_GPIO_Port GPIOC
 #define switch_Pin GPIO_PIN_1
 #define switch_GPIO_Port GPIOB
-#define BTN_UP_Pin GPIO_PIN_2
-#define BTN_UP_GPIO_Port GPIOB
-#define BTN_DOWN_Pin GPIO_PIN_10
-#define BTN_DOWN_GPIO_Port GPIOB
-#define BTN_OK_Pin GPIO_PIN_11
-#define BTN_OK_GPIO_Port GPIOB
-#define BEEP_Pin GPIO_PIN_5
-#define BEEP_GPIO_Port GPIOB
 #define RELAY_CTRL_Pin GPIO_PIN_8
 #define RELAY_CTRL_GPIO_Port GPIOB
 
