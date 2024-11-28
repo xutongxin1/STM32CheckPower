@@ -50,11 +50,11 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-int thresholdType = ThresholdTypeLow;
-int thresholdTypeOld = ThresholdTypeLow;
-int range = 30;
-int threshold = 20;
-int thresholdOld = 20;
+int nowAlarmType = AlarmTypeLow;
+int oldAlarmType = AlarmTypeLow;
+int alarmValue = 10;
+int alarmValueManual = 30;
+int newAlarmValueManual = 30;
 uint8_t y = 0;
 uint8_t x = 0;
 
@@ -63,7 +63,11 @@ extern uint16_t adc_buffer[1024];
 extern uint16_t adc_buffer_cnt;
 
 extern DMA_HandleTypeDef hdma_adc1;
-
+#define SW1 HAL_GPIO_ReadPin(Switch1_GPIO_Port, Switch1_Pin)
+#define SW2 HAL_GPIO_ReadPin(Switch2_GPIO_Port, Switch2_Pin)
+#define UP_PRESS HAL_GPIO_ReadPin(BTN_UP_GPIO_Port, BTN_UP_Pin) == 0
+#define DOWN_PRESS HAL_GPIO_ReadPin(BTN_DOWN_GPIO_Port, BTN_DOWN_Pin) == 0
+#define OK_PRESS HAL_GPIO_ReadPin(BTN_OK_GPIO_Port, BTN_OK_Pin) == 0
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -75,29 +79,6 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-uint32_t Read_ADC_Channel(uint32_t channel)
-{
-    ADC_ChannelConfTypeDef sConfig = {0};
-    uint32_t adc_value = 0;
-
-    sConfig.Channel = channel;
-    sConfig.Rank = 1;
-    sConfig.SamplingTime = ADC_SAMPLETIME_239CYCLES_5;
-    if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK) {
-        Error_Handler();
-    }
-
-    HAL_ADC_Start(&hadc2);
-
-    if (HAL_ADC_PollForConversion(&hadc2, HAL_MAX_DELAY) == HAL_OK) {
-        adc_value = HAL_ADC_GetValue(&hadc2);
-    }
-
-    // ???ADC
-    HAL_ADC_Stop(&hadc2);
-
-    return adc_value;
-}
 /* USER CODE END 0 */
 
 /**
@@ -107,39 +88,39 @@ uint32_t Read_ADC_Channel(uint32_t channel)
 int main(void)
 {
 
-  /* USER CODE BEGIN 1 */
+    /* USER CODE BEGIN 1 */
 
-  /* USER CODE END 1 */
+    /* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
+    /* MCU Configuration--------------------------------------------------------*/
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+    /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+    HAL_Init();
 
-  /* USER CODE BEGIN Init */
+    /* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
+    /* USER CODE END Init */
 
-  /* Configure the system clock */
-  SystemClock_Config();
+    /* Configure the system clock */
+    SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
+    /* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
+    /* USER CODE END SysInit */
 
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_DMA_Init();
-  MX_USART1_UART_Init();
-  MX_ADC1_Init();
-  MX_ADC2_Init();
-  MX_TIM4_Init();
-  MX_TIM3_Init();
-  /* USER CODE BEGIN 2 */
-  /* USER CODE END 2 */
+    /* Initialize all configured peripherals */
+    MX_GPIO_Init();
+    MX_DMA_Init();
+    MX_USART1_UART_Init();
+    MX_ADC1_Init();
+    MX_ADC2_Init();
+    MX_TIM4_Init();
+    MX_TIM3_Init();
+    /* USER CODE BEGIN 2 */
+    /* USER CODE END 2 */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+    /* Infinite loop */
+    /* USER CODE BEGIN WHILE */
     HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
     HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
 
@@ -149,14 +130,14 @@ int main(void)
     HAL_ADC_Start_DMA(&hadc1, (uint32_t *) &testbuffer, 1);
     float32_t rms_buffer[1024] = {0};
     volatile float BaseVolatge;
-    float32_t Rms = 0.0f;
+    float32_t rms_303 = 0.0f;
     HAL_Delay(200);
     OLED_init();
     OLED_full();
     HAL_Delay(200);
-    int fps = 0;
+//    int fps = 0;
     char str[20];
-    HAL_GPIO_WritePin(RELAY_CTRL_GPIO_Port, RELAY_CTRL_Pin, 1);
+
     RetargetInit(&huart1);
     OLED_full();
     oled_ShownChinese(0x00, 0x00, Chinese_word[6]);
@@ -167,72 +148,71 @@ int main(void)
     oled_ShownChinese(0x10, 0x02, Chinese_word[3]);
     oled_ShownChinese(0x00, 0x04, Chinese_word[4]);
     oled_ShownChinese(0x10, 0x04, Chinese_word[5]);
-    sprintf(str, ":%dV    ", threshold);
-    oled_write_string(0x40,0x00,str, 8);
+    sprintf(str, ":%dV    ", alarmValue);
+    oled_write_string(0x40, 0x00, str, 8);
 
     while (1) {
-        sprintf(str, ":%dV-%dV      ", thresholdType *(-25) + 30, range);
-        oled_write_string(0x20, 0x04, str, 12 );//???????
 
-        
-        thresholdType = HAL_GPIO_ReadPin(switch_GPIO_Port, switch_Pin);
-        if (thresholdType != thresholdTypeOld) {
-            thresholdTypeOld = thresholdType;
-            if (thresholdType == ThresholdTypeHigh) {
-                HAL_GPIO_WritePin(RELAY_CTRL_GPIO_Port, RELAY_CTRL_Pin, 0);
-                range = 250;
-                threshold = 100;
-            } else if (thresholdType == ThresholdTypeLow) {
-                HAL_GPIO_WritePin(RELAY_CTRL_GPIO_Port, RELAY_CTRL_Pin, 1);
-                range = 30;
-                threshold = 20;
-            }
-            sprintf(str, ":%dV      ", threshold);
-            oled_write_string(0x40,0x00,str, 8);
-
+        //get alarm type
+        if (SW1 == 0) {
+            nowAlarmType = AlarmTypeLow;
+            alarmValue = 10;
+        } else if (SW2 == 0) {
+            nowAlarmType = AlarmTypeHigh;
+            alarmValue = 30;
+        } else {
+            nowAlarmType = AlarmTypeManual;
+            alarmValue = alarmValueManual;
         }
 
+        //refresh the oled with new alarm type
+        if (nowAlarmType != oldAlarmType) {
+            oldAlarmType = nowAlarmType;
+            if (nowAlarmType == AlarmTypeLow) {
+                sprintf(str, ":%dV-%dV    ", 5, 30);
+            } else {
+                sprintf(str, ":%dV-%dV    ", 30, 250);
+            }
+            oled_write_string(0x20, 0x04, str, 12);
+            sprintf(str, ":%dV      ", alarmValue);
+            oled_write_string(0x40, 0x00, str, 8);
+        }
 
-        if (HAL_GPIO_ReadPin(BTN_UP_GPIO_Port, BTN_UP_Pin) == 0) {
+        //change the alarm value
+        if (UP_PRESS) {
             HAL_Delay(20);
-            if (HAL_GPIO_ReadPin(BTN_UP_GPIO_Port, BTN_UP_Pin) == 0) {
-                if (thresholdType == ThresholdTypeHigh && threshold < 250) {
-                    threshold += 10;
-
-                } else if (thresholdType == ThresholdTypeLow && threshold < 30) {
-                    threshold += 1;
+            if (UP_PRESS && nowAlarmType == AlarmTypeManual) {
+                if (newAlarmValueManual < 250) {
+                    newAlarmValueManual += 5;
+                    sprintf(str, "%dV ", newAlarmValueManual);
+                    oled_write_string_Over(0x48, 0x00, str, 4);
                 }
-                sprintf(str, "%dV ", threshold);
-                oled_write_string_Over(0x48,0x00,str, 4);
             }
         }
-        if (HAL_GPIO_ReadPin(BTN_DOWN_GPIO_Port, BTN_DOWN_Pin) == 0) {
+        if (DOWN_PRESS) {
             HAL_Delay(20);
-            if (HAL_GPIO_ReadPin(BTN_DOWN_GPIO_Port, BTN_DOWN_Pin) == 0) {
-                if (thresholdType == ThresholdTypeHigh && threshold > 30) {
-                    threshold -= 10;
-                } else if (thresholdType == ThresholdTypeLow && threshold > 5) {
-                    threshold -= 1;
+            if (DOWN_PRESS && nowAlarmType == AlarmTypeManual) {
+                if (newAlarmValueManual > 20) {
+                    newAlarmValueManual -= 5;
+                    sprintf(str, "%dV ", newAlarmValueManual);
+                    oled_write_string_Over(0x48, 0x00, str, 4);
                 }
-                sprintf(str, "%dV ", threshold);
-                oled_write_string_Over(0x48,0x00,str, 4);
             }
         }
-        if (HAL_GPIO_ReadPin(BTN_OK_GPIO_Port, BTN_OK_Pin) == 0) {
+        if (OK_PRESS) {
             HAL_Delay(20);
-            if (HAL_GPIO_ReadPin(BTN_OK_GPIO_Port, BTN_OK_Pin) == 0) {
-                thresholdOld = threshold;
-                sprintf(str, ":%dV   ", thresholdOld);
-                oled_write_string(0x40,0x00,str, strlen(str));
+            if (OK_PRESS && nowAlarmType == AlarmTypeManual) {
+                alarmValueManual = newAlarmValueManual;
+                sprintf(str, ":%dV   ", alarmValueManual);
+                oled_write_string(0x40, 0x00, str, strlen(str));
             }
         }
 
-
+        //adc work
         if (adc_buffer_cnt == 1024) {
-//            uint32_t adcValue1 = Read_ADC_Channel(ADC_CHANNEL_2);
-//            BaseVolatge = (adcValue1) / 4096.0 * 3.3;
+
             for (int i = 0; i < 1024; i++) {
-                rms_buffer[i] = adc_buffer[i] / 4096.0 * 3.3 - (3.3 / 4.0 * 2);
+                rms_buffer[i] = adc_buffer[i] / 4096.0 * 3.3 - (3.3 / 4.0 * 2);//1:3,2 Maginify
 //                printf("%f\n", rms_buffer[i]);
             }
             int zeroCrossings[10];
@@ -252,61 +232,41 @@ int main(void)
                 endIdx = zeroCrossings[2];
                 length = endIdx - startIdx;
 
-                arm_rms_f32(&rms_buffer[startIdx], length, &Rms);
-            } else{
-                Rms = 0;
+                arm_rms_f32(&rms_buffer[startIdx], length, &rms_303);
+            } else {
+                rms_303 = 0;
             }
             adc_buffer_cnt = 0;
         }
 
+        //calculate the alarm value
+        double rms_220 = (rms_303) / 0.0309 * 11.0309 / 0.75 / 2; //0.0309:11,1:3,2Maginify
 
-        if (thresholdType == ThresholdTypeHigh) {
-            float RMSN = (Rms) / 0.47 * 220.0 / 0.75 / 2 * 1.02;
-            if (RMSN > thresholdOld) {
+        //check is need alarm
+        if ((int) rms_220 > alarmValue) {
 //                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
 //                ssd1306_SetCursor(2, 50);
-                htim3.Instance->CCR2 = 250;
-                sprintf(str, "  ALARMING!!!!  ");
-                oled_write_string(0x00,0x06,str, strlen(str));
-            } else {
+            htim3.Instance->CCR2 = 250;
+            sprintf(str, "  ALARMING!!!!  ");
+            oled_write_string(0x00, 0x06, str, strlen(str));
+        } else {
 //                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 0);
-                htim3.Instance->CCR2 = 0;
+            htim3.Instance->CCR2 = 0;
 //                ssd1306_SetCursor(2, 50);
-                sprintf(str, "  WORKING....   ");
-                oled_write_string(0x00,0x06,str, strlen(str));
-            }
-//            ssd1306_SetCursor(30, 24);
-            sprintf(str, ":%.1fV        ", RMSN, RMSN * sqrt(2));
-            oled_write_string(0x20,0x02,str, 12);
-        } else if (thresholdType == ThresholdTypeLow) {
-            float RMSN = (Rms) / 0.47 * 22.0 / 0.75 / 2 * 1.04;
-            if (RMSN > thresholdOld)
-            {
-//                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
-//                ssd1306_SetCursor(2, 50);
-                htim3.Instance->CCR2 = 250;
-                sprintf(str, "  ALARMING!!!!  ");
-                oled_write_string(0x00,0x06,str, strlen(str));
-                if (RMSN > 30) {
-                    HAL_GPIO_WritePin(RELAY_CTRL_GPIO_Port, RELAY_CTRL_Pin, 0);
-                    RMSN = (Rms) / 0.47 * 220.0 / 0.75 / 2 * 0.9955;
-                }
-            } else {
-                htim3.Instance->CCR2 = 0;
-                sprintf(str, "  WORKING....   ");
-                oled_write_string(0x00,0x06,str, strlen(str));
-            }
-            sprintf(str, ":%.1fV        ", RMSN, RMSN * sqrt(2));
-            oled_write_string(0x20,0x02,str, 12);
-
+            sprintf(str, "  WORKING....   ");
+            oled_write_string(0x00, 0x06, str, strlen(str));
         }
+//            ssd1306_SetCursor(30, 24);
+        sprintf(str, ":%.1fV        ", rms_220);
+        oled_write_string(0x20, 0x02, str, 12);
 
-    /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
+        /* USER CODE END WHILE */
+
+        /* USER CODE BEGIN 3 */
 
     }
-  /* USER CODE END 3 */
+    /* USER CODE END 3 */
 }
 
 /**
@@ -315,43 +275,38 @@ int main(void)
   */
 void SystemClock_Config(void)
 {
-  LL_FLASH_SetLatency(LL_FLASH_LATENCY_2);
-  while(LL_FLASH_GetLatency()!= LL_FLASH_LATENCY_2)
-  {
-  }
-  LL_RCC_HSE_Enable();
+    LL_FLASH_SetLatency(LL_FLASH_LATENCY_2);
+    while (LL_FLASH_GetLatency() != LL_FLASH_LATENCY_2) {
+    }
+    LL_RCC_HSE_Enable();
 
-   /* Wait till HSE is ready */
-  while(LL_RCC_HSE_IsReady() != 1)
-  {
+    /* Wait till HSE is ready */
+    while (LL_RCC_HSE_IsReady() != 1) {
 
-  }
-  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE_DIV_1, LL_RCC_PLL_MUL_9);
-  LL_RCC_PLL_Enable();
+    }
+    LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE_DIV_1, LL_RCC_PLL_MUL_9);
+    LL_RCC_PLL_Enable();
 
-   /* Wait till PLL is ready */
-  while(LL_RCC_PLL_IsReady() != 1)
-  {
+    /* Wait till PLL is ready */
+    while (LL_RCC_PLL_IsReady() != 1) {
 
-  }
-  LL_RCC_SetAHBPrescaler(LL_RCC_SYSCLK_DIV_1);
-  LL_RCC_SetAPB1Prescaler(LL_RCC_APB1_DIV_2);
-  LL_RCC_SetAPB2Prescaler(LL_RCC_APB2_DIV_1);
-  LL_RCC_SetSysClkSource(LL_RCC_SYS_CLKSOURCE_PLL);
+    }
+    LL_RCC_SetAHBPrescaler(LL_RCC_SYSCLK_DIV_1);
+    LL_RCC_SetAPB1Prescaler(LL_RCC_APB1_DIV_2);
+    LL_RCC_SetAPB2Prescaler(LL_RCC_APB2_DIV_1);
+    LL_RCC_SetSysClkSource(LL_RCC_SYS_CLKSOURCE_PLL);
 
-   /* Wait till System clock is ready */
-  while(LL_RCC_GetSysClkSource() != LL_RCC_SYS_CLKSOURCE_STATUS_PLL)
-  {
+    /* Wait till System clock is ready */
+    while (LL_RCC_GetSysClkSource() != LL_RCC_SYS_CLKSOURCE_STATUS_PLL) {
 
-  }
-  LL_SetSystemCoreClock(72000000);
+    }
+    LL_SetSystemCoreClock(72000000);
 
-   /* Update the time base */
-  if (HAL_InitTick (TICK_INT_PRIORITY) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  LL_RCC_SetADCClockSource(LL_RCC_ADC_CLKSRC_PCLK2_DIV_6);
+    /* Update the time base */
+    if (HAL_InitTick(TICK_INT_PRIORITY) != HAL_OK) {
+        Error_Handler();
+    }
+    LL_RCC_SetADCClockSource(LL_RCC_ADC_CLKSRC_PCLK2_DIV_6);
 }
 
 /* USER CODE BEGIN 4 */
@@ -364,12 +319,12 @@ void SystemClock_Config(void)
   */
 void Error_Handler(void)
 {
-  /* USER CODE BEGIN Error_Handler_Debug */
+    /* USER CODE BEGIN Error_Handler_Debug */
     /* User can add his own implementation to report the HAL error return state */
     __disable_irq();
     while (1) {
     }
-  /* USER CODE END Error_Handler_Debug */
+    /* USER CODE END Error_Handler_Debug */
 }
 
 #ifdef  USE_FULL_ASSERT

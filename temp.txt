@@ -50,8 +50,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-int thresholdType = ThresholdTypeLow;
-int thresholdTypeOld = ThresholdTypeLow;
+int alarmType = AlarmTypeLow;
+int thresholdTypeOld = AlarmTypeLow;
 int range = 30;
 int threshold = 20;
 int thresholdOld = 20;
@@ -167,18 +167,18 @@ int main(void)
     HAL_GPIO_WritePin(RELAY_CTRL_GPIO_Port, RELAY_CTRL_Pin, 1);
 
     while (1) {
-        sprintf(str, ":%dV-%dV  ", thresholdType *(-25) + 30, range);
+        sprintf(str, ":%dV-%dV  ", alarmType *(-25) + 30, range);
         oled_write_string(0x20, 0x04, str, strlen(str) );//锟斤拷印锟斤拷锟斤拷
 
         //锟叫讹拷锟角凤拷锟斤拷要锟叫碉拷位
-        thresholdType = HAL_GPIO_ReadPin(switch_GPIO_Port, switch_Pin);
-        if (thresholdType != thresholdTypeOld) {
-            thresholdTypeOld = thresholdType;
-            if (thresholdType == ThresholdTypeHigh) {
+        alarmType = HAL_GPIO_ReadPin(switch_GPIO_Port, switch_Pin);
+        if (alarmType != thresholdTypeOld) {
+            thresholdTypeOld = alarmType;
+            if (alarmType == AlarmTypeHigh) {
                 HAL_GPIO_WritePin(RELAY_CTRL_GPIO_Port, RELAY_CTRL_Pin, 0);
                 range = 250;
                 threshold = 100;
-            } else if (thresholdType == ThresholdTypeLow) {
+            } else if (alarmType == AlarmTypeLow) {
                 HAL_GPIO_WritePin(RELAY_CTRL_GPIO_Port, RELAY_CTRL_Pin, 1);
                 range = 30;
                 threshold = 20;
@@ -191,10 +191,10 @@ int main(void)
         if (HAL_GPIO_ReadPin(BTN_UP_GPIO_Port, BTN_UP_Pin) == 0) {
             HAL_Delay(20);
             if (HAL_GPIO_ReadPin(BTN_UP_GPIO_Port, BTN_UP_Pin) == 0) {
-                if (thresholdType == ThresholdTypeHigh && threshold < 250) {
+                if (alarmType == AlarmTypeHigh && threshold < 250) {
                     threshold += 10;
 
-                } else if (thresholdType == ThresholdTypeLow && threshold < 30) {
+                } else if (alarmType == AlarmTypeLow && threshold < 30) {
                     threshold += 1;
                 }
 //                ssd1306_SetCursor(30, 8);
@@ -205,9 +205,9 @@ int main(void)
         if (HAL_GPIO_ReadPin(BTN_DOWN_GPIO_Port, BTN_DOWN_Pin) == 0) {
             HAL_Delay(20);
             if (HAL_GPIO_ReadPin(BTN_DOWN_GPIO_Port, BTN_DOWN_Pin) == 0) {
-                if (thresholdType == ThresholdTypeHigh && threshold > 30) {
+                if (alarmType == AlarmTypeHigh && threshold > 30) {
                     threshold -= 10;
-                } else if (thresholdType == ThresholdTypeLow && threshold > 5) {
+                } else if (alarmType == AlarmTypeLow && threshold > 5) {
                     threshold -= 1;
                 }
 //                ssd1306_SetCursor(30, 8);
@@ -255,7 +255,7 @@ int main(void)
         }
 
         //锟斤拷锟诫挡位锟斤拷锟斤拷锟斤拷锟斤拷
-        if (thresholdType == ThresholdTypeHigh) {
+        if (alarmType == AlarmTypeHigh) {
             float RMSN = (Rms) / 0.47 * 220.0 / 0.75 / 2 * 0.99;
             if (RMSN > thresholdOld) {//锟斤拷锟斤拷锟叫讹拷
 //                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
@@ -273,7 +273,7 @@ int main(void)
 //            ssd1306_SetCursor(30, 24);
             sprintf(str, ":%.1fV   ", RMSN);
             oled_write_string(0x20,0x02,str, strlen(str));
-        } else if (thresholdType == ThresholdTypeLow) {
+        } else if (alarmType == AlarmTypeLow) {
             float RMSN = (Rms) / 0.47 * 22.0 / 0.75 / 2 * 1.04;
             if (RMSN > thresholdOld) //锟斤拷锟斤拷锟叫讹拷
             {

@@ -46,9 +46,10 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-enum thresholdType {
-   ThresholdTypeHigh = 0,
-   ThresholdTypeLow
+enum alarmType {
+    AlarmTypeHigh = 0,
+    AlarmTypeLow,
+    AlarmTypeManual
 };
 /* USER CODE END ET */
 
@@ -80,8 +81,6 @@ void Error_Handler(void);
 #define Switch1_GPIO_Port GPIOB
 #define Switch2_Pin GPIO_PIN_2
 #define Switch2_GPIO_Port GPIOB
-#define RELAY_CTRL_Pin GPIO_PIN_8
-#define RELAY_CTRL_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
