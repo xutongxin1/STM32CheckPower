@@ -93,7 +93,7 @@ uint32_t Read_ADC_Channel(uint32_t channel)
         adc_value = HAL_ADC_GetValue(&hadc2);
     }
 
-    // �ر�ADC
+    // ???ADC
     HAL_ADC_Stop(&hadc2);
 
     return adc_value;
@@ -167,14 +167,14 @@ int main(void)
     oled_ShownChinese(0x10, 0x02, Chinese_word[3]);
     oled_ShownChinese(0x00, 0x04, Chinese_word[4]);
     oled_ShownChinese(0x10, 0x04, Chinese_word[5]);
-    sprintf(str, ":%dV    ", threshold);//���µ�λ���ݴ�ӡ
+    sprintf(str, ":%dV    ", threshold);
     oled_write_string(0x40,0x00,str, 8);
 
     while (1) {
         sprintf(str, ":%dV-%dV      ", thresholdType *(-25) + 30, range);
-        oled_write_string(0x20, 0x04, str, 12 );//��ӡ����
+        oled_write_string(0x20, 0x04, str, 12 );//???????
 
-        //�ж��Ƿ���Ҫ�е�λ
+        
         thresholdType = HAL_GPIO_ReadPin(switch_GPIO_Port, switch_Pin);
         if (thresholdType != thresholdTypeOld) {
             thresholdTypeOld = thresholdType;
@@ -187,12 +187,12 @@ int main(void)
                 range = 30;
                 threshold = 20;
             }
-            sprintf(str, ":%dV      ", threshold);//���µ�λ���ݴ�ӡ
+            sprintf(str, ":%dV      ", threshold);
             oled_write_string(0x40,0x00,str, 8);
 
         }
 
-        //��ֵ�������?
+
         if (HAL_GPIO_ReadPin(BTN_UP_GPIO_Port, BTN_UP_Pin) == 0) {
             HAL_Delay(20);
             if (HAL_GPIO_ReadPin(BTN_UP_GPIO_Port, BTN_UP_Pin) == 0) {
@@ -227,7 +227,7 @@ int main(void)
             }
         }
 
-        //ADC��������
+
         if (adc_buffer_cnt == 1024) {
 //            uint32_t adcValue1 = Read_ADC_Channel(ADC_CHANNEL_2);
 //            BaseVolatge = (adcValue1) / 4096.0 * 3.3;
@@ -237,7 +237,7 @@ int main(void)
             }
             int zeroCrossings[10];
             int zeroCrossingCount = 0;
-            // ���������㽻���?
+
             for (int i = 0; i < 1023; i++) {
                 if (rms_buffer[i] <= 0 && rms_buffer[i + 1] > 0) {
                     zeroCrossings[zeroCrossingCount++] = i;
@@ -248,9 +248,9 @@ int main(void)
             }
             int startIdx, endIdx, length = 0;
             if (zeroCrossingCount >= 3) {
-                startIdx = zeroCrossings[0]; // ��һ���㽻��������
-                endIdx = zeroCrossings[2]; // �������㽻��������
-                length = endIdx - startIdx; // ����2�����ڵĳ���
+                startIdx = zeroCrossings[0];
+                endIdx = zeroCrossings[2];
+                length = endIdx - startIdx;
 
                 arm_rms_f32(&rms_buffer[startIdx], length, &Rms);
             } else{
@@ -259,10 +259,10 @@ int main(void)
             adc_buffer_cnt = 0;
         }
 
-        //���뵲λ��������
+
         if (thresholdType == ThresholdTypeHigh) {
             float RMSN = (Rms) / 0.47 * 220.0 / 0.75 / 2 * 1.02;
-            if (RMSN > thresholdOld) {//�����ж�
+            if (RMSN > thresholdOld) {
 //                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
 //                ssd1306_SetCursor(2, 50);
                 htim3.Instance->CCR2 = 250;
@@ -280,7 +280,7 @@ int main(void)
             oled_write_string(0x20,0x02,str, 12);
         } else if (thresholdType == ThresholdTypeLow) {
             float RMSN = (Rms) / 0.47 * 22.0 / 0.75 / 2 * 1.04;
-            if (RMSN > thresholdOld) //�����ж�
+            if (RMSN > thresholdOld)
             {
 //                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
 //                ssd1306_SetCursor(2, 50);

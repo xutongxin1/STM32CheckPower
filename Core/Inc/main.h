@@ -76,8 +76,10 @@ void Error_Handler(void);
 #define BTN_UP_GPIO_Port GPIOC
 #define BTN_OK_Pin GPIO_PIN_15
 #define BTN_OK_GPIO_Port GPIOC
-#define switch_Pin GPIO_PIN_1
-#define switch_GPIO_Port GPIOB
+#define Switch1_Pin GPIO_PIN_1
+#define Switch1_GPIO_Port GPIOB
+#define Switch2_Pin GPIO_PIN_2
+#define Switch2_GPIO_Port GPIOB
 #define RELAY_CTRL_Pin GPIO_PIN_8
 #define RELAY_CTRL_GPIO_Port GPIOB
 
