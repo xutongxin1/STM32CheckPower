@@ -146,7 +146,7 @@ int main(void)
     oled_ShownChinese(0x30, 0x00, Chinese_word[1]);
     oled_ShownChinese(0x00, 0x02, Chinese_word[2]);
     oled_ShownChinese(0x10, 0x02, Chinese_word[3]);
-    for (int i = 0; i < 12; ++i) {
+    for (int i = 0; i < 7; ++i) {
         oled_ShownChinese(i*16, 0x04, type_low_words[i]);
     }
 //    oled_ShownChinese(0x10, 0x04, type_low_words[1]);
@@ -166,22 +166,21 @@ int main(void)
             nowAlarmType = AlarmTypeManual;
             alarmValue = alarmValueManual;
         }
-
         //refresh the oled with new alarm type
         if (nowAlarmType != oldAlarmType) {
             oldAlarmType = nowAlarmType;
             if (nowAlarmType == AlarmTypeLow) {
 //                sprintf(str, ":%dV-%dV    ", 5, 30);
-                for (int i = 0; i < 12; ++i) {
+                for (int i = 0; i < 8; ++i) {
                     oled_ShownChinese(i*16, 0x04, type_low_words[i]);
                 }
             } else if (nowAlarmType == AlarmTypeHigh) {
-                for (int i = 0; i < 12; ++i) {
+                for (int i = 0; i < 8; ++i) {
                     oled_ShownChinese(i*16, 0x04, type_high_words[i]);
                 }
             }
             else {
-                for (int i = 0; i < 12; ++i) {
+                for (int i = 0; i < 7; ++i) {
                     oled_ShownChinese(i*16, 0x04, type_manual_words[i]);
                 }
                 sprintf(str, ":%dV      ", alarmValueManual);
