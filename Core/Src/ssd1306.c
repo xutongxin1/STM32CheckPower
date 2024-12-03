@@ -483,59 +483,21 @@ void oled_ShownChinese(char x,char y,char *p){
     for (int i = 0; i < 31; ++i) {
         OLED_send_data(p[i]);
     }
+}
 
-//
-//    for (int i = 2; i < 4; ++i) {
-//        for (int j = 0; j < 16; ++j) {
-//            OLED_send_data(Chinese_word[i][j]);
-//        }
-//    }
-//    OLED_send_cmd(0xB0 + 1); // Set the current RAM page address.
-//    OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
-//    OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
-//    for (int i = 2; i < 4; ++i) {
-//        for (int j = 16; j < 32; ++j) {
-//            OLED_send_data(Chinese_word[i][j]);
-//        }
-//    }
-//        //阈值：
-//        OLED_send_cmd(0xB0 + 2); // Set the current RAM page address.
-//        OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
-//        OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
-//        for (int i = 0; i < 2; ++i) {
-//            for (int j = 0; j < 16; ++j) {
-//                OLED_send_data(Chinese_word[i][j]);
-//            }
-//        }
-//        OLED_send_cmd(0xB0+3); // Set the current RAM page address.
-//        OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
-//        OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
-//        for (int i = 0; i < 2; ++i) {
-//            for (int j = 16; j < 32; ++j) {
-//                OLED_send_data(Chinese_word[i][j]);
-//        }
-//    }
-//
-//
-//
-//    //测量范围：
-//        OLED_send_cmd(0xB0+4); // Set the current RAM page address.
-//        OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
-//        OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
-//        for (int i = 4; i < 6; ++i) {
-//            for (int j = 0; j < 16; ++j) {
-//                    OLED_send_data(Chinese_word[i][j]);
-//            };
-//        }
-//    //测量范围：
-//        OLED_send_cmd(0xB0+5); // Set the current RAM page address.
-//        OLED_send_cmd(0x00 + SSD1306_X_OFFSET_LOWER);
-//        OLED_send_cmd(0x10 + SSD1306_X_OFFSET_UPPER);
-//        for (int i = 4; i < 6; ++i) {
-//            for (int j = 16; j < 32; ++j) {
-//                OLED_send_data(Chinese_word[i][j]);
-//        };
-//    }
+void oled_ShownEnglish(char x,char y,char *p){
+    //电压
+    OLED_send_cmd(0x20); // Set the current RAM page address.
+    OLED_send_cmd(0x00);
+    OLED_send_cmd(0x21);
+    OLED_send_cmd(x);
+    OLED_send_cmd(x+0x07);
+    OLED_send_cmd(0x22);
+    OLED_send_cmd(y);
+    OLED_send_cmd(y+0x01);
+    for (int i = 0; i < 15; ++i) {
+        OLED_send_data(p[i]);
+    }
 }
 void oled_write_string(char x, char y, char *p, uint8_t len)
 {

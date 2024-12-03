@@ -78,16 +78,51 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void showAlarmTypeLow() {
+    oled_ShownChinese(0x00, 0x04, type_low_words[0]);
+    oled_ShownChinese(0x10, 0x04, type_low_words[1]);
+    oled_ShownEnglish(0x20, 0x04, type_low_words[2]); //:
+    oled_ShownEnglish(0x29, 0x04, type_low_words[3]); //5
+    oled_ShownChinese(0x30, 0x04, type_low_words[4]);
+    oled_ShownEnglish(0x40, 0x04, type_low_words[5]);
+    oled_ShownChinese(0x49, 0x04, type_low_words[6]);
+    oled_ShownEnglish(0x59, 0x04, type_low_words[7]);
+    oled_ShownEnglish(0x60, 0x04, type_low_words[8]);
+    oled_ShownEnglish(0x69, 0x04, type_low_words[9]);
+    oled_ShownChinese(0x70, 0x04, type_low_words[9]);
+}
+void showAlarmTypeHigh() {
+    oled_ShownChinese(0x00, 0x04, type_high_words[0]);
+    oled_ShownChinese(0x10, 0x04, type_high_words[1]);
+    oled_ShownEnglish(0x20, 0x04, type_high_words[2]); //:
+    oled_ShownEnglish(0x29, 0x04, type_high_words[3]); //5
+    oled_ShownChinese(0x30, 0x04, type_high_words[4]);
+    oled_ShownEnglish(0x40, 0x04, type_high_words[5]);
+    oled_ShownChinese(0x49, 0x04, type_high_words[6]);
+    oled_ShownEnglish(0x59, 0x04, type_high_words[7]);
+    oled_ShownEnglish(0x60, 0x04, type_high_words[8]);
+    oled_ShownEnglish(0x69, 0x04, type_high_words[9]);
+    oled_ShownChinese(0x70, 0x04, type_high_words[10]);
+}
+void showAlarmTypeManual() {
+    oled_ShownChinese(0x00, 0x04, type_manual_words[0]);
+    oled_ShownChinese(0x10, 0x04, type_manual_words[1]);
+    oled_ShownEnglish(0x20, 0x04, type_manual_words[2]); //:
+    oled_ShownChinese(0x29, 0x04, type_manual_words[3]);
+    oled_ShownChinese(0x39, 0x04, type_manual_words[4]);
+    oled_ShownChinese(0x49, 0x04, type_manual_words[5]);
+    oled_ShownChinese(0x59, 0x04, type_manual_words[6]);
+    oled_ShownChinese(0x69, 0x04, type_manual_words[7]);
+    oled_ShownEnglish(0x79, 0x04, type_manual_words[8]);
 
+}
 /* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
   * @retval int
   */
-int main(void)
-{
-
+int main(void) {
     /* USER CODE BEGIN 1 */
 
     /* USER CODE END 1 */
@@ -135,7 +170,7 @@ int main(void)
     OLED_init();
     OLED_full();
     HAL_Delay(200);
-//    int fps = 0;
+    //    int fps = 0;
     char str[20];
 
     RetargetInit(&huart1);
@@ -146,48 +181,38 @@ int main(void)
     oled_ShownChinese(0x30, 0x00, Chinese_word[1]);
     oled_ShownChinese(0x00, 0x02, Chinese_word[2]);
     oled_ShownChinese(0x10, 0x02, Chinese_word[3]);
-    for (int i = 0; i < 7; ++i) {
-        oled_ShownChinese(i*16, 0x04, type_low_words[i]);
-    }
-//    oled_ShownChinese(0x10, 0x04, type_low_words[1]);
+
+    showAlarmTypeLow();
+
+    //    oled_ShownChinese(0x10, 0x04, type_low_words[1]);
     sprintf(str, ":%dV    ", alarmValue);
     oled_write_string(0x40, 0x00, str, 8);
 
     while (1) {
-
         //get alarm type
         if (SW1 == 0) {
             nowAlarmType = AlarmTypeLow;
             alarmValue = 10;
+            showAlarmTypeLow();
         } else if (SW2 == 0) {
-            nowAlarmType = AlarmTypeHigh;
-            alarmValue = 30;
-        } else {
             nowAlarmType = AlarmTypeManual;
             alarmValue = alarmValueManual;
+            showAlarmTypeManual();
+        } else {
+            nowAlarmType = AlarmTypeHigh;
+            alarmValue = 30;
+            showAlarmTypeHigh();
         }
+
+
+
         //refresh the oled with new alarm type
         if (nowAlarmType != oldAlarmType) {
             oldAlarmType = nowAlarmType;
-            if (nowAlarmType == AlarmTypeLow) {
-//                sprintf(str, ":%dV-%dV    ", 5, 30);
-                for (int i = 0; i < 8; ++i) {
-                    oled_ShownChinese(i*16, 0x04, type_low_words[i]);
-                }
-            } else if (nowAlarmType == AlarmTypeHigh) {
-                for (int i = 0; i < 8; ++i) {
-                    oled_ShownChinese(i*16, 0x04, type_high_words[i]);
-                }
-            }
-            else {
-                for (int i = 0; i < 7; ++i) {
-                    oled_ShownChinese(i*16, 0x04, type_manual_words[i]);
-                }
-                sprintf(str, ":%dV      ", alarmValueManual);
-                oled_write_string(0x40, 0x00, str, 8);
-            }
-
-            oled_write_string(0x20, 0x04, str, 12);
+            // if (nowAlarmType == AlarmTypeLow) {
+            // } else if (nowAlarmType == AlarmTypeHigh) {
+            // } else {
+            // }
             sprintf(str, ":%dV      ", alarmValue);
             oled_write_string(0x40, 0x00, str, 8);
         }
@@ -224,10 +249,10 @@ int main(void)
 
         //adc work
         if (adc_buffer_cnt == 1024) {
-
             for (int i = 0; i < 1024; i++) {
-                rms_buffer[i] = adc_buffer[i] / 4096.0 * 3.3 - (3.3 / 4.0 * 2);//1:3,2 Maginify
-//                printf("%f\n", rms_buffer[i]);
+                // rms_buffer[i] = adc_buffer[i] / 4096.0 * 3.3 - (3.3 / (750 + 240) * 240 * 2); //1:(3+1),2 Maginify
+                rms_buffer[i] = adc_buffer[i] / 4096.0 * 3.3 - 1.754; //1:(3+1),2 Maginify
+                // printf("%f\n", rms_buffer[i]);
             }
             int zeroCrossings[10];
             int zeroCrossingCount = 0;
@@ -254,31 +279,29 @@ int main(void)
         }
 
         //calculate the alarm value
-        double rms_220 = (rms_303) / 0.0309 * 11.0309 / 0.75 / 2; //0.0309:11,1:3,2Maginify
+        double rms_220 = (rms_303) / 0.0309 * 11.0309 / 750.0 * (750 + 240 + 30.9) / 2.0; //0.0309:11,1:3,2Maginify
 
         //check is need alarm
         if ((int) rms_220 > alarmValue) {
-//                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
-//                ssd1306_SetCursor(2, 50);
+            //                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
+            //                ssd1306_SetCursor(2, 50);
             htim3.Instance->CCR2 = 250;
             sprintf(str, "  ALARMING!!!!  ");
             oled_write_string(0x00, 0x06, str, strlen(str));
         } else {
-//                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 0);
+            //                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 0);
             htim3.Instance->CCR2 = 0;
-//                ssd1306_SetCursor(2, 50);
+            //                ssd1306_SetCursor(2, 50);
             sprintf(str, "  WORKING....   ");
             oled_write_string(0x00, 0x06, str, strlen(str));
         }
-//            ssd1306_SetCursor(30, 24);
+        //            ssd1306_SetCursor(30, 24);
         sprintf(str, ":%.1fV        ", rms_220);
         oled_write_string(0x20, 0x02, str, 12);
-
 
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
-
     }
     /* USER CODE END 3 */
 }
@@ -287,8 +310,7 @@ int main(void)
   * @brief System Clock Configuration
   * @retval None
   */
-void SystemClock_Config(void)
-{
+void SystemClock_Config(void) {
     LL_FLASH_SetLatency(LL_FLASH_LATENCY_2);
     while (LL_FLASH_GetLatency() != LL_FLASH_LATENCY_2) {
     }
@@ -296,14 +318,12 @@ void SystemClock_Config(void)
 
     /* Wait till HSE is ready */
     while (LL_RCC_HSE_IsReady() != 1) {
-
     }
     LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE_DIV_1, LL_RCC_PLL_MUL_9);
     LL_RCC_PLL_Enable();
 
     /* Wait till PLL is ready */
     while (LL_RCC_PLL_IsReady() != 1) {
-
     }
     LL_RCC_SetAHBPrescaler(LL_RCC_SYSCLK_DIV_1);
     LL_RCC_SetAPB1Prescaler(LL_RCC_APB1_DIV_2);
@@ -312,7 +332,6 @@ void SystemClock_Config(void)
 
     /* Wait till System clock is ready */
     while (LL_RCC_GetSysClkSource() != LL_RCC_SYS_CLKSOURCE_STATUS_PLL) {
-
     }
     LL_SetSystemCoreClock(72000000);
 
@@ -331,8 +350,7 @@ void SystemClock_Config(void)
   * @brief  This function is executed in case of error occurrence.
   * @retval None
   */
-void Error_Handler(void)
-{
+void Error_Handler(void) {
     /* USER CODE BEGIN Error_Handler_Debug */
     /* User can add his own implementation to report the HAL error return state */
     __disable_irq();
