@@ -89,7 +89,7 @@ void showAlarmTypeLow() {
     oled_ShownEnglish(0x59, 0x04, type_low_words[7]);
     oled_ShownEnglish(0x60, 0x04, type_low_words[8]);
     oled_ShownEnglish(0x69, 0x04, type_low_words[9]);
-    oled_ShownChinese(0x70, 0x04, type_low_words[9]);
+    oled_ShownChinese(0x70, 0x04, type_low_words[10]);
 }
 void showAlarmTypeHigh() {
     oled_ShownChinese(0x00, 0x04, type_high_words[0]);
@@ -114,7 +114,6 @@ void showAlarmTypeManual() {
     oled_ShownChinese(0x59, 0x04, type_manual_words[6]);
     oled_ShownChinese(0x69, 0x04, type_manual_words[7]);
     oled_ShownEnglish(0x79, 0x04, type_manual_words[8]);
-
 }
 /* USER CODE END 0 */
 
@@ -204,8 +203,6 @@ int main(void) {
             showAlarmTypeHigh();
         }
 
-
-
         //refresh the oled with new alarm type
         if (nowAlarmType != oldAlarmType) {
             oldAlarmType = nowAlarmType;
@@ -254,33 +251,21 @@ int main(void) {
                 rms_buffer[i] = adc_buffer[i] / 4096.0 * 3.3 - 1.754; //1:(3+1),2 Maginify
                 // printf("%f\n", rms_buffer[i]);
             }
-            int zeroCrossings[10];
-            int zeroCrossingCount = 0;
+            float square_buffer[1024]; // 存储平方值
+            float mean_square;
+            arm_mult_f32(rms_buffer, rms_buffer, square_buffer, 1024);
 
-            for (int i = 0; i < 1023; i++) {
-                if (rms_buffer[i] <= 0 && rms_buffer[i + 1] > 0) {
-                    zeroCrossings[zeroCrossingCount++] = i;
-                    if (zeroCrossingCount >= 10) {
-                        break;
-                    }
-                }
-            }
-            int startIdx, endIdx, length = 0;
-            if (zeroCrossingCount >= 3) {
-                startIdx = zeroCrossings[0];
-                endIdx = zeroCrossings[2];
-                length = endIdx - startIdx;
+            // 3. 计算平方的平均值
+            arm_mean_f32(square_buffer, 1024, &mean_square);
 
-                arm_rms_f32(&rms_buffer[startIdx], length, &rms_303);
-            } else {
-                rms_303 = 0;
-            }
-            adc_buffer_cnt = 0;
+            // 4. 计算有效值（RMS）
+            arm_sqrt_f32(mean_square, &rms_303);
         }
 
         //calculate the alarm value
         double rms_220 = (rms_303) / 0.0309 * 11.0309 / 750.0 * (750 + 240 + 30.9) / 2.0; //0.0309:11,1:3,2Maginify
 
+        // rms_220 = rms_220 * 1.085;
         //check is need alarm
         if ((int) rms_220 > alarmValue) {
             //                HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, 1);
