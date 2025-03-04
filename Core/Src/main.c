@@ -260,11 +260,12 @@ int main(void) {
 
             // 4. 计算有效值（RMS）
             arm_sqrt_f32(mean_square, &rms_303);
+            adc_buffer_cnt=0;
         }
 
         //calculate the alarm value
         double rms_220 = (rms_303) / 0.0309 * 11.0309 / 750.0 * (750 + 240 + 30.9) / 2.0; //0.0309:11,1:3,2Maginify
-
+        printf("%f\r\n", rms_220);
         // rms_220 = rms_220 * 1.085;
         //check is need alarm
         if ((int) rms_220 > alarmValue) {
