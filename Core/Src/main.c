@@ -180,10 +180,34 @@ int main(void) {
     oled_ShownChinese(0x30, 0x00, Chinese_word[1]);
     oled_ShownChinese(0x00, 0x02, Chinese_word[2]);
     oled_ShownChinese(0x10, 0x02, Chinese_word[3]);
+////<<<<<<< Updated upstream
 
     showAlarmTypeLow();
 
     //    oled_ShownChinese(0x10, 0x04, type_low_words[1]);
+//=======
+//    //dangwei
+//    oled_ShownChinese(0x00, 0x04, type_low_words[0]);
+//    oled_ShownChinese(0x10, 0x04, type_low_words[1]);
+//    sprintf(str, ":5");
+//    oled_write_string(0x20, 0x00, str, 8);
+//    oled_ShownChinese(0x20, 0x04, type_low_words[3]);
+//    oled_ShownChinese(0x30, 0x04, type_low_words[4]);
+//    oled_ShownChinese(0x38, 0x04, type_low_words[5]);
+//    oled_ShownChinese(0x40, 0x04, type_low_words[6]);
+//    oled_ShownChinese(0x48, 0x04, type_low_words[7]);
+//    oled_ShownChinese(0x50, 0x04, type_low_words[8]);
+//    oled_ShownChinese(0x58, 0x04, type_low_words[9]);
+//    oled_ShownChinese(0x58, 0x04, type_low_words[10]);
+//    oled_ShownChinese(0x68, 0x04, type_low_words[11]);
+//    oled_ShownChinese(0x70, 0x04, type_low_words[12]);
+//    oled_ShownChinese(0x78, 0x04, type_low_words[13]);
+//
+//    for (int i = 0; i < 7; ++i) {
+//        oled_ShownChinese(i*16, 0x04, type_low_words[i]);
+//    }
+////    oled_ShownChinese(0x10, 0x04, type_low_words[1]);
+//>>>>>>> Stashed changes
     sprintf(str, ":%dV    ", alarmValue);
     oled_write_string(0x40, 0x00, str, 8);
 
@@ -206,10 +230,48 @@ int main(void) {
         //refresh the oled with new alarm type
         if (nowAlarmType != oldAlarmType) {
             oldAlarmType = nowAlarmType;
+///<<<<<<< Updated upstream
             // if (nowAlarmType == AlarmTypeLow) {
             // } else if (nowAlarmType == AlarmTypeHigh) {
             // } else {
             // }
+//=======
+//            if (nowAlarmType == AlarmTypeLow) {
+////                sprintf(str, ":%dV-%dV    ", 5, 30);
+////                for (int i = 0; i < 8; ++i) {
+////                    oled_ShownChinese(i*16, 0x04, type_low_words[i]);
+////                }
+////            oled_ShownChinese(0, 0x04, type_high_words[i]);
+//                oled_ShownChinese(0x00, 0x04, type_low_words[0]);
+//                oled_ShownChinese(0x10, 0x04, type_low_words[1]);
+//                oled_ShownChinese(0x18, 0x04, type_low_words[2]);
+//                oled_ShownChinese(0x20, 0x04, type_low_words[3]);
+//                oled_ShownChinese(0x30, 0x04, type_low_words[4]);
+//                oled_ShownChinese(0x38, 0x04, type_low_words[5]);
+//                oled_ShownChinese(0x40, 0x04, type_low_words[6]);
+//                oled_ShownChinese(0x48, 0x04, type_low_words[7]);
+//                oled_ShownChinese(0x50, 0x04, type_low_words[8]);
+//                oled_ShownChinese(0x58, 0x04, type_low_words[9]);
+//                oled_ShownChinese(0x58, 0x04, type_low_words[10]);
+//                oled_ShownChinese(0x68, 0x04, type_low_words[11]);
+//                oled_ShownChinese(0x70, 0x04, type_low_words[12]);
+//                oled_ShownChinese(0x78, 0x04, type_low_words[13]);
+//
+//            } else if (nowAlarmType == AlarmTypeHigh) {
+//                for (int i = 0; i < 8; ++i) {
+//                    oled_ShownChinese(i*16, 0x04, type_high_words[i]);
+//                }
+//            }
+//            else {
+//                for (int i = 0; i < 7; ++i) {
+//                    oled_ShownChinese(i*16, 0x04, type_manual_words[i]);
+//                }
+//                sprintf(str, ":%dV      ", alarmValueManual);
+//                oled_write_string(0x40, 0x00, str, 8);
+//            }
+//
+//            oled_write_string(0x20, 0x04, str, 12);
+///>>>>>>> Stashed changes
             sprintf(str, ":%dV      ", alarmValue);
             oled_write_string(0x40, 0x00, str, 8);
         }
