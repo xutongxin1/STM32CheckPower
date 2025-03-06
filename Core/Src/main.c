@@ -327,6 +327,7 @@ int main(void) {
 
         //calculate the alarm value
         double rms_220 = (rms_303) / 0.0309 * 11.0309 / 750.0 * (750 + 240 + 30.9) / 2.0; //0.0309:11,1:3,2Maginify
+        rms_220 *= 1.05;
         printf("%f\r\n", rms_220);
         // rms_220 = rms_220 * 1.085;
         //check is need alarm
